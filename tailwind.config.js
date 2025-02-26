@@ -12,6 +12,9 @@
       animation: {
         scrollLogos: 'scrollLeft 10s linear infinite',
       },
+      fontFamily: {
+        poppins: ["Poppins", "serif"],
+      },
     
     },
   },
