@@ -21,3 +21,5 @@ document.querySelectorAll('.tab-btn').forEach(button => {
         document.getElementById(this.dataset.tab).classList.remove('hidden');
     });
 });
+
+
