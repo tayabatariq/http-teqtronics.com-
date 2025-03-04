@@ -1,622 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About || Infixdev | Hire developers & digital Marketers </title>
-<link rel="shortcut icon" href="images/logo_dark.png" type="image/x-icon">
- <!-- Swiper.js CSS -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About || Infixdev | Hire developers & digital Marketers</title>
+    <link rel="shortcut icon" href="images/logo_dark.png" type="image/x-icon" />
+    <!-- Swiper.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
- <!-- Navbar -->
- <nav class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20">
-            <div class="flex items-center">
-                <img width="130px m-1" src="./images/logo.jpg" alt="">
-            </div>
-            <div class="hidden mt-5 md:flex space-x-6">
-                <a href="index.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Home</a>
-                <a href="about.html" class="text-[#252B33] font-bold hover:text-[#087B92]">About</a>
-                <a href="services.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Services</a>
-                <!-- <a href="training.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Trainings</a> -->
-                <a href="contact.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Contact US</a>
-                <a href="blog.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Blogs</a>
-
-            </div>
-            <div class="hidden md:flex items-center">
-                <a href="#" class="bg-[#087B92] text-white px-4 py-2 rounded-full hover:bg-[#175a69]">Contact Us
-                    →</a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex items-center">
-                <button id="menu-btn" class="text-gray-600 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+          <div class="flex items-center">
+            <img width="130px m-1" src="./images/logo.jpg" alt="" />
+          </div>
+          <div class="hidden mt-5 md:flex space-x-6">
+            <a
+              href="index.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >About</a
+            >
+            <a
+              href="services.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Services</a
+            >
+            <!-- <a href="training.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Trainings</a> -->
+            <a
+              href="contact.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Contact US</a
+            >
+            <a
+              href="blog.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Blogs</a
+            >
+          </div>
+          <div class="hidden md:flex items-center">
+            <a
+              href="#"
+              class="bg-[#087B92] text-white px-4 py-2 rounded-full hover:bg-[#175a69]"
+              >Contact Us →</a
+            >
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
-        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Focus</a>
-        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Industries</a>
-        <a href="#" class="block px-4 py-2 text-blue-500 font-semibold hover:bg-gray-100">Services</a>
-        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Methodology</a>
-        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Work</a>
-        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blogs</a>
-        <a href="#" class="block px-4 py-2 text-center bg-bg-[#087B92] text-white hover:bg-[#087B92]">Contact Us
-            →</a>
-    </div>
-</nav>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200"
+      >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >About</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Focus</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Industries</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-blue-500 font-semibold hover:bg-gray-100"
+          >Services</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Methodology</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Work</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Blogs</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-center bg-bg-[#087B92] text-white hover:bg-[#087B92]"
+          >Contact Us →</a
+        >
+      </div>
+    </nav>
 
-<!-- opennav -->
-<div id="openav" class="max-w-4xl hidden absolute top-10 left-44 z-10 mx-auto flex bg-white p-6 rounded-lg shadow-md">
-    <!-- Left Section -->
-    <div class="bg-gradient-to-b from-[#087B92] to-[#332D34] text-white p-6 rounded-lg w-1/3 flex flex-col items-center">
+    <!-- opennav -->
+    <div
+      id="openav"
+      class="max-w-4xl hidden absolute top-10 left-44 z-10 mx-auto flex bg-white p-6 rounded-lg shadow-md"
+    >
+      <!-- Left Section -->
+      <div
+        class="bg-gradient-to-b from-[#087B92] to-[#332D34] text-white p-6 rounded-lg w-1/3 flex flex-col items-center"
+      >
         <div class="flex space-x-2 mb-4">
-            <img src="images/SWIPERIMAG4.png" class="w-10 h-10 rounded-full border-2 border-white">
-            <img src="images/SWIPERIMAG5.webp" class="w-10 h-10 rounded-full border-2 border-white">
-            <img src="images/SWIPERIMAG5.webp" class="w-10 h-10 rounded-full border-2 border-white">
+          <img
+            src="images/SWIPERIMAG4.png"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <img
+            src="images/SWIPERIMAG5.webp"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <img
+            src="images/SWIPERIMAG5.webp"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
         </div>
         <h2 class="text-lg font-bold">BUILD YOUR</h2>
         <h1 class="text-2xl font-bold">Agile Team</h1>
-        <p class="text-sm mt-2 text-center">Create your own agile team by forming the right set of resources skilled in specific streams</p>
-        <button class="mt-4 bg-white text-teal-700 px-4 py-2 rounded-md font-medium">Contact Us</button>
-    </div>
-    
-    <!-- Right Section -->
-    <div class="w-2/3  p-6 grid grid-cols-2 gap-4 text-gray-800">
-        <div class="flex items-center space-x-3">
-           <i class="fas fa-robot text-xl"></i>
-            <span>AI/ML</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-globe text-xl"></i>
-            <span>Digital marketing & SEO</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-mobile-alt text-xl"></i>
-            <span>Mobile Applications</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-cogs text-xl"></i>
-            <span>Technical Resource</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-laptop-code text-xl"></i>
-            <span>Software Development</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-chalkboard-teacher text-xl"></i>
-            <span>Technical Trainings</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-code text-xl"></i>
-            <span>Web Development</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-pencil-ruler text-xl"></i>
-            <span>UX/UI Designing</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-store text-xl"></i>
-            <span>E-commerce Stores Setup</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-users text-xl"></i>
-            <span>Social Media Market</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-link text-xl"></i>
-            <span>BlockChain Systems</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-server text-xl"></i>
-            <span>DevOps</span>
-        </div>
-    </div>
-</div>
+        <p class="text-sm mt-2 text-center">
+          Create your own agile team by forming the right set of resources
+          skilled in specific streams
+        </p>
+        <button
+          class="mt-4 bg-white text-teal-700 px-4 py-2 rounded-md font-medium"
+        >
+          Contact Us
+        </button>
+      </div>
 
-<!-- about Heading -->
-<div class="max-w-6xl mx-auto px-3 py-12 text-center">
-    <p class="text-gray-600 text-lg font-semibold">Award-winning Offshore Software Development Company Since 2018</p>
-    
-    <h1 class="text-xl md:text-6xl blur-[.6px] font-bold text-gray-900 mt-4">
-        Our Treasure Comprises Our <br>
+      <!-- Right Section -->
+      <div class="w-2/3 p-6 grid grid-cols-2 gap-4 text-gray-800">
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-robot text-xl"></i>
+          <span>AI/ML</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-globe text-xl"></i>
+          <span>Digital marketing & SEO</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-mobile-alt text-xl"></i>
+          <span>Mobile Applications</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-cogs text-xl"></i>
+          <span>Technical Resource</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-laptop-code text-xl"></i>
+          <span>Software Development</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-chalkboard-teacher text-xl"></i>
+          <span>Technical Trainings</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-code text-xl"></i>
+          <span>Web Development</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-pencil-ruler text-xl"></i>
+          <span>UX/UI Designing</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-store text-xl"></i>
+          <span>E-commerce Stores Setup</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-users text-xl"></i>
+          <span>Social Media Market</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-link text-xl"></i>
+          <span>BlockChain Systems</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-server text-xl"></i>
+          <span>DevOps</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- about Heading -->
+    <div class="max-w-6xl mx-auto px-3 py-12 text-center">
+      <p class="text-gray-600 text-lg font-semibold">
+        TeqTronics – Innovating Digital Solutions Since 2018
+      </p>
+
+      <h1 class="text-xl md:text-6xl blur-[.6px] font-bold text-gray-900 mt-4">
+        Our Strength Lies in Our <br />
         <span class="text-gray-900">People, Vision & Values</span>
-    </h1>
-    
-    <p class="text-gray-700 mt-6 text-justify text-lg leading-relaxed">
-        <span class="font-bold">Optimum Tech</span>, established in 2018, stands at the forefront of innovation in the realm of 
-        <span class="font-bold">Information Technology & Software Company</span>. As a dynamic and forward-thinking company, we specialize in 
-        providing cutting-edge solutions that cater to the diverse needs of our clients. At <span class="font-bold">Optimum Tech</span>, we excel in 
-        mobile development using Flutter, ensuring sleek and efficient applications that seamlessly integrate across platforms.
+      </h1>
 
-        Our expertise extends to crafting responsive and visually stunning WordPress websites, leveraging the power of this versatile platform. 
-        Additionally, we are proficient in developing robust web applications with <span class="font-bold">Laravel and Python</span>, harnessing the 
-        strength of these frameworks to deliver scalable and high-performance solutions. 
-        Committed to excellence, our team at Optimum Tech combines technical prowess with creative flair to transform ideas into reality. 
-        We take pride in our ability to adapt to the ever-evolving landscape of technology, providing our clients with the optimal solutions they need to thrive in a digital world.
-    </p>
-    <video src="images/video.mp4" class="mt-6 w-full" loop muted autoplay></video>
+      <p class="text-gray-700 mt-6 text-justify text-lg leading-relaxed">
+        At <span class="font-bold">TeqTronics</span>, our greatest strength lies
+        in our people, vision, and values. Since our establishment in 2018, we
+        have been at the forefront of technology, delivering innovative and
+        tailored software solutions to meet the evolving needs of businesses.
+        Specializing in
+        <span class="font-bold">cutting-edge web and mobile development</span>,
+        we build sleek, high-performance applications using Flutter, ensuring
+        seamless cross-platform experiences. Our expertise also extends to
+        creating visually engaging and fully responsive WordPress websites,
+        leveraging the platform’s flexibility to craft stunning digital
+        experiences. Additionally, we develop robust and scalable web
+        applications with Laravel and Python, ensuring efficiency, security, and
+        long-term performance. At <span class="font-bold">TeqTronics</span>, we
+        blend technical expertise with creativity to bring ideas to life. With a
+        strong commitment to
+        <span class="font-bold">quality and innovation</span>, we strive to
+        deliver solutions that drive growth and success for our clients.
+      </p>
+      <video
+        src="images/video.mp4"
+        class="mt-6 w-full"
+        loop
+        muted
+        autoplay
+      ></video>
 
-    <!-- content section -->
-    <div class="container mx-auto text-left py-12">
+      <!-- content section -->
+      <div class="container mx-auto text-left py-12">
         <div class="grid md:grid-cols-2 gap-12">
-            <!-- Who We Are -->
-            <div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Who We Are</h2>
-                <p class="text-lg text-gray-700">
-                    Established in 2018, Optimum Tech is a dynamic and forward-thinking 
-                    <strong class="font-semibold">Information Technology company.</strong> 
-                    Our team is driven by a passion for innovation, and we pride ourselves on staying at the forefront of 
-                    technological advancements, including Artificial Intelligence. Committed to excellence, we bring a 
-                    perfect blend of technical expertise and creative vision to every project.
-                </p>
-            </div>
-            <!-- What We Offer -->
-            <div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Offer</h2>
-                <p class="text-lg text-gray-700">
-                    At Optimum Tech, we specialize in crafting cutting-edge solutions to meet a diverse range of client needs. 
-                    Our expertise includes mobile development using <strong class="font-semibold">Flutter</strong>, ensuring seamless 
-                    and efficient applications across various platforms. We excel in creating visually stunning 
-                    <strong class="font-semibold">WordPress</strong> websites, harnessing the versatility of this platform. 
-                    Additionally, we are proficient in developing robust web applications using 
-                    <strong class="font-semibold">Laravel</strong> and <strong class="font-semibold">Python</strong>, and integrating 
-                    <strong class="font-semibold">AI technologies</strong>. Our commitment is to provide optimal technology solutions, 
-                    Software leveraging AI, that empower our clients to thrive in the 
-                    <strong class="font-semibold">digital</strong> landscape.
-                </p>
-            </div>
+          <!-- Who We Are -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Who We Are</h2>
+            <p class="text-lg text-gray-700">
+              Who We Are Founded in 2018,
+              <span class="font-bold">TEQTRONICS</span> is a dynamic and
+              innovative Information Technology company. Driven by a passion for
+              technological advancement, our team stays at the forefront of
+              emerging trends, including Artificial Intelligence (AI). We take
+              pride in blending technical expertise with creative vision,
+              delivering exceptional results for every project.
+            </p>
+          </div>
+          <!-- What We Offer -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Offer</h2>
+            <p class="text-lg text-gray-700">
+              At <span class="font-bold"> TEQTRONICS</span>, we specialize in delivering forward-thinking
+              solutions to meet a variety of client needs. Our expertise
+              includes mobile app development with Flutter, ensuring seamless
+              and <span class="font-bold">efficient cross-platform applications</span>. We also excel in
+              designing visually stunning WordPress websites, utilizing the
+              versatility of the platform to its fullest. Furthermore, our team
+              is skilled in developing robust web applications using <span  class="font-bold">Laravel</span> and
+             <span class="font-bold"> Python</span>, and <span class="font-bold">integrating AI technologies</span> into software solutions.
+              Our commitment to excellence drives us to deliver optimal
+              technology solutions that empower clients to succeed in the
+              digital landscape.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-
-    <!-- card  -->
-    <div class="container mx-auto  py-12">
+      <!-- card  -->
+      <div class="container mx-auto py-12">
         <!-- Heading -->
         <h2 class="text-5xl font-bold text-center text-gray-900 mb-12">
-            Belief of Every OptimumTech Employee
+          Belief of Every OptimumTech Employee
         </h2>
 
         <!-- Three Column Grid -->
         <div class="grid md:grid-cols-3 gap-1 text-left">
-            <!-- Client-centric Approach -->
-            <div class="p-6">
-                <div class="text-red-500 text-4xl mb-4">
-                    🔴 <!-- Replace with actual icon -->
-                </div>
-                <h3 class="text-[1.6rem] font-bold text-gray-900 mb-3">Client-centric Approach</h3>
-                <p class="text-gray-700 text-justify">
-                    For any business, customers are always at the center. Being a leading 
-                    <strong class="font-semibold">web and mobile app development</strong> company, our definition goes beyond our direct customers. 
-                    We always start from where you are with your ideas and think from YOUR end customers' perspectives, 
-                    their pain areas and devise a solution that solves core problems to benefit your business.
-                </p>
+          <!-- Client-centric Approach -->
+          <div class="p-6">
+            <div class="text-red-500 text-4xl mb-4">
+              🔴
+              <!-- Replace with actual icon -->
             </div>
+            <h3 class="text-[1.6rem] font-bold text-gray-900 mb-3">
+              Client-centric Approach
+            </h3>
+            <p class="text-gray-700 text-justify">
+                At <span class="font-bold">TEQTRONICS</span>, the client always comes first. Our approach goes beyond focusing solely on direct customers; we think from your end customers' perspective. We analyze their pain points and devise solutions that not only solve core problems but also drive your business forward.
+            </p>
+          </div>
 
-            <!-- Effective Collaboration -->
-            <div class="p-6">
-                <div class="text-purple-500 text-4xl mb-4">
-                    🟣 <!-- Replace with actual icon -->
-                </div>
-                <h3 class="text-[1.6rem] font-bold text-gray-900 mb-3">Effective Collaboration</h3>
-                <p class="text-gray-700 text-justify">
-                    Communication is the Key. We tend to over-communicate at times. Although it sounds overwhelming, 
-                    eventually, it works wonders for our client business. When our development team collaborates with 
-                    our clients sitting thousands of miles away, it's apparent that we stay in touch with platforms and 
-                    mediums that allow effectiveness, transparency, and accuracy.
-                </p>
+          <!-- Effective Collaboration -->
+          <div class="p-6">
+            <div class="text-purple-500 text-4xl mb-4">
+              🟣
+              <!-- Replace with actual icon -->
             </div>
+            <h3 class="text-[1.6rem] font-bold text-gray-900 mb-3">
+              Effective Collaboration
+            </h3>
+            <p class="text-gray-700 text-justify">
+                We believe communication is key to successful collaboration. Sometimes we over-communicate, but we do so because it brings exceptional results. Regardless of the distance, we stay connected through various platforms and mediums that promote transparency, effectiveness, and accuracy in every projects.
+            </p>
+          </div>
 
-            <!-- Quality Delivered in Time -->
-            <div class="p-6">
-                <div class="text-blue-500 text-4xl mb-4">
-                    🔵 <!-- Replace with actual icon -->
-                </div>
-                <h3 class="text-[1.6rem] font-bold text-gray-900 mb-3">Quality Delivered in Time</h3>
-                <p class="text-gray-700 text-justify">
-                    With over two decades of experience in the offshore 
-                    <strong class="font-semibold">IT software</strong> development industry, we have a great set of internal frameworks with 
-                    best-in-class infrastructure that enables us to deliver solutions with superior quality at all times. 
-                    We have learned how to prevent failures and replicate success. We don't just brag about quality. 
-                    We define and deliver it in time.
-                </p>
+          <!-- Quality Delivered in Time -->
+          <div class="p-6">
+            <div class="text-blue-500 text-4xl mb-4">
+              🔵
+              <!-- Replace with actual icon -->
             </div>
+            <h3 class="text-[1.6rem] font-bold text-gray-900 mb-3">
+              Quality Delivered in Time
+            </h3>
+            <p class="text-gray-700 text-justify">
+                With over two decades of experience in offshore IT software development, <span class="font-bold">TEQTRONICS</span> has honed its internal frameworks and built state-of-the-art infrastructure to consistently deliver high-quality solutions. We’ve learned how to avoid failures and replicate successes, and we don't just claim quality—we define it and deliver it on time.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <img src="images/banner2.webp" alt="">
+      <img src="images/banner2.webp" alt="" />
 
-    
-
-
-     <!-- compnay stats -->
-     <section class="min-h-fit px-6 py-16 flex flex-col items-center text-center">
+      <!-- compnay stats -->
+      <section
+        class="min-h-fit px-6 py-16 flex flex-col items-center text-center"
+      >
         <!-- Heading -->
-        <h2 class="text-[2.3rem] max-w-4xl max-sm:text-[1.5rem] font-bold text-[#252B33] leading-tight">
-            We've helped businesses increase their revenue <br>
-            on an average by 90% in their first year with us!
+        <h2
+          class="text-[2.3rem] max-w-4xl max-sm:text-[1.5rem] font-bold text-[#252B33] leading-tight"
+        >
+        At TeqTronics, we've empowered businesses to boost their revenue <br> by an average of 90% within their first year with us!
         </h2>
 
         <!-- Stats Section -->
-        <div class="flex flex-wrap justify-center items-center gap-y-6 gap-x-14 mt-10">
-            <!-- Stat 1 -->
-            <div class="text-center">
-                <h3 class=" md:text-[5.1rem] font-extrabold text-[#252B33]">2000+</h3>
-                <p class="text-[#555] text-[1.1rem]">Satisfied Clients Across the Globe</p>
-            </div>
+        <div
+          class="flex flex-wrap justify-center items-center gap-y-6 gap-x-14 mt-10"
+        >
+          <!-- Stat 1 -->
+          <div class="text-center">
+            <h3 class="md:text-[5.1rem] font-extrabold text-[#252B33]">
+              2000+
+            </h3>
+            <p class="text-[#555] text-[1.1rem]">
+              Satisfied Clients Across the Globe
+            </p>
+          </div>
 
-            <!-- Stat 2 -->
-            <div class="text-center">
-                <h3 class=" md:text-[5.1rem] font-extrabold text-[#252B33]">5500+</h3>
-                <p class="text-[#555] text-[1.1rem]">Projects Delivered Successfully</p>
-            </div>
+          <!-- Stat 2 -->
+          <div class="text-center">
+            <h3 class="md:text-[5.1rem] font-extrabold text-[#252B33]">
+              5500+
+            </h3>
+            <p class="text-[#555] text-[1.1rem]">
+              Projects Delivered Successfully
+            </p>
+          </div>
 
-            <!-- Stat 3 -->
-            <div class="text-center">
-                <h3 class=" md:text-[5.1rem] font-extrabold text-[#252B33]">100+</h3>
-                <p class="text-[#555] text-[1.1rem]">Experts Under the Same Roof</p>
-            </div>
+          <!-- Stat 3 -->
+          <div class="text-center">
+            <h3 class="md:text-[5.1rem] font-extrabold text-[#252B33]">100+</h3>
+            <p class="text-[#555] text-[1.1rem]">Experts Under the Same Roof</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-
-
-    <!-- swiperd user -->
-    <div class="container mx-auto px-6 py-12">
+      <!-- swiperd user -->
+      <div class="container mx-auto px-6 py-12">
         <!-- Section Heading -->
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Leaders</h2>
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Our Leaders
+        </h2>
 
         <!-- Swiper Container -->
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                
-                <!-- Leader 1 -->
-                <div class="swiper-slide">
-                    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80">
-                        <img src="images/SWIPERIMAG4.png" alt="Usman Aftab" class="w-full h-auto">
-                        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4">
-                            <h3 class="text-lg font-semibold">Usman Aftab</h3>
-                            <p class="text-blue-400 text-sm">CTO</p>
-                        </div>
-                    </div>
+          <div class="swiper-wrapper">
+            <!-- Leader 1 -->
+            <div class="swiper-slide">
+              <div
+                class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80"
+              >
+                <img
+                  src="images/SWIPERIMAG4.png"
+                  alt="Usman Aftab"
+                  class="w-full h-auto"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+                >
+                  <h3 class="text-lg font-semibold">Usman Aftab</h3>
+                  <p class="text-blue-400 text-sm">CTO</p>
                 </div>
-
-                <!-- Leader 2 -->
-                <div class="swiper-slide">
-                    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80">
-                        <img src="images/SWIPERIMAG5.webp" alt="Saim Zafar" class="w-full h-auto">
-                        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4">
-                            <h3 class="text-lg font-semibold">Saim Zafar</h3>
-                            <p class="text-blue-400 text-sm">Business Development Executive</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Leader 3 -->
-                <div class="swiper-slide">
-                    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80">
-                        <img src="images/SWIPERIMAGE2.webp
-                        " alt="Nawaz Anwar" class="w-full h-auto">
-                        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4">
-                            <h3 class="text-lg font-semibold">Nawaz Anwar</h3>
-                            <p class="text-blue-400 text-sm">Senior Developer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80">
-                        <img src="images/SWIPERIMAGE3.webp" alt="Nawaz Anwar" class="w-full h-auto">
-                        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4">
-                            <h3 class="text-lg font-semibold">Nawaz Anwar</h3>
-                            <p class="text-blue-400 text-sm">Senior Developer</p>
-                        </div>
-                    </div>
-                </div>
-              
-                
-
+              </div>
             </div>
 
-            <!-- Swiper Pagination & Navigation -->
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- Leader 2 -->
+            <div class="swiper-slide">
+              <div
+                class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80"
+              >
+                <img
+                  src="images/SWIPERIMAG5.webp"
+                  alt="Saim Zafar"
+                  class="w-full h-auto"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+                >
+                  <h3 class="text-lg font-semibold">Saim Zafar</h3>
+                  <p class="text-blue-400 text-sm">
+                    Business Development Executive
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leader 3 -->
+            <div class="swiper-slide">
+              <div
+                class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80"
+              >
+                <img
+                  src="images/SWIPERIMAGE2.webp
+                        "
+                  alt="Nawaz Anwar"
+                  class="w-full h-auto"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+                >
+                  <h3 class="text-lg font-semibold">Nawaz Anwar</h3>
+                  <p class="text-blue-400 text-sm">Senior Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="relative bg-white rounded-lg shadow-lg overflow-hidden w-80"
+              >
+                <img
+                  src="images/SWIPERIMAGE3.webp"
+                  alt="Nawaz Anwar"
+                  class="w-full h-auto"
+                />
+                <div
+                  class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+                >
+                  <h3 class="text-lg font-semibold">Nawaz Anwar</h3>
+                  <p class="text-blue-400 text-sm">Senior Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper Pagination & Navigation -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-    </div>
+      </div>
 
-
-    <div class="max-w-5xl mx-auto grid m-5 grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        
+      <div
+        class="max-w-5xl mx-auto grid m-5 grid-cols-1 md:grid-cols-2 gap-8 items-start"
+      >
         <!-- Text Section -->
         <div>
-            <h2 class="text-4xl font-bold text-left text-gray-900">We Are Verified From</h2>
-            <p class="mt-4 text-gray-700 text-left text-lg leading-relaxed">
-                “Choose confidence, choose Optimumtech – your trusted agency proudly verified by 
-                <span class="font-semibold">SSCP, FBR, FITCON, and PASHA.</span> Our commitment to excellence is certified 
-                by industry-leading standards, ensuring your peace of mind. With the stamp of approval from SSCP, we 
-                guarantee security; FBR certification underscores our financial integrity. FITCON accreditation validates 
-                our commitment to fitness in every facet of our operations, while PASHA’s endorsement attests to our 
-                technological prowess. Partner with us, where every section of our expertise is officially verified, assuring 
-                you reliability and success.”
-            </p>
+          <h2 class="text-4xl font-bold text-left text-gray-900">
+            We Are Verified From
+          </h2>
+          <p class="mt-4 text-gray-700 text-left text-lg leading-relaxed">
+            “Choose <span class="font-bold">TeqTronics</span> with confidence – a trusted agency proudly verified by <span class="font-semibold">SSCP, FBR, FITCON, and PASHA</span>. Our commitment to excellence is backed by industry-leading certifications, ensuring reliability and trust. SSCP certification guarantees top-tier security, FBR recognition highlights our financial integrity, FITCON accreditation reflects our operational excellence, and PASHA’s endorsement showcases our technological expertise. Partner with TeqTronics, where every aspect of our work is officially verified, giving you the assurance of quality, security, and success.”
+          </p>
         </div>
 
         <!-- Image Section -->
         <div>
-            <img src="images/we-are-verified-.jpg" alt="Verification Image" class="rounded-lg shadow-lg">
+          <img
+            src="images/we-are-verified-.jpg"
+            alt="Verification Image"
+            class="rounded-lg shadow-lg"
+          />
         </div>
-
-    </div>
-    <div class="max-w-5xl mx-auto grid m-5 grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        
+      </div>
+      <div
+        class="max-w-5xl mx-auto grid m-5 grid-cols-1 md:grid-cols-2 gap-8 items-start"
+      >
         <!-- Text Section -->
         <div>
-            <h2 class="text-4xl font-bold text-left text-gray-900">Our Achievements</h2>
-            <p class="mt-4  lowercase text-gray-700 text-left text-lg leading-relaxed">
-               <!-- " <span>OptimumTech</span> has earned numerous national and international accolades for our exceptional IT services. Notable achievements include winning the PASHA ICT Awards 2023, nomination for APicta ICT Awards Hong Kong 2023, receiving the NIC grant from NICF, and being a top-rated seller on Clutch.co. We are also proud to be a Microsoft Certified Solution Designing Partner, further solidifying our position as a leader in the IT industry" -->
-               <span class="uppercase" >O</span>VER THE YEARS, TEQTRONICS SYSTEMS &
-               TRAINING HAS SUCCESSFULLY TRAINED 
-              THOUSANDS OF STUDENTS. MANY OF OUR ALUMNI
-               HAVE GONE ON TO ACHIEVE REMARKABLE SUCCESS
-               IN THEIR CAREERS. SOME HAVE EMBRACED FREELANCING,
-               OTHERS HAVE SECURED FULFILLING JOBS, AND A 
-              SIGNIFICANT NUMBER HAVE STARTED THEIR OWN 
-              BUSINESSES. OUR TRAINING PROGRAMS HAVE BEEN 
-              INSTRUMENTAL IN THEIR JOURNEYS TOWARD SUCCESS.
-            </p>
+          <h2 class="text-4xl font-bold text-left text-gray-900">
+            Our Achievements
+          </h2>
+          <p
+            class="mt-4 lowercase text-gray-700 text-left text-lg leading-relaxed"
+          >
+            <!-- " <span>OptimumTech</span> has earned numerous national and international accolades for our exceptional IT services. Notable achievements include winning the PASHA ICT Awards 2023, nomination for APicta ICT Awards Hong Kong 2023, receiving the NIC grant from NICF, and being a top-rated seller on Clutch.co. We are also proud to be a Microsoft Certified Solution Designing Partner, further solidifying our position as a leader in the IT industry" -->
+            <span class="uppercase">O</span>VER THE YEARS, TEQTRONICS SYSTEMS &
+            TRAINING HAS SUCCESSFULLY TRAINED THOUSANDS OF STUDENTS. MANY OF OUR
+            ALUMNI HAVE GONE ON TO ACHIEVE REMARKABLE SUCCESS IN THEIR CAREERS.
+            SOME HAVE EMBRACED FREELANCING, OTHERS HAVE SECURED FULFILLING JOBS,
+            AND A SIGNIFICANT NUMBER HAVE STARTED THEIR OWN BUSINESSES. OUR
+            TRAINING PROGRAMS HAVE BEEN INSTRUMENTAL IN THEIR JOURNEYS TOWARD
+            SUCCESS.
+          </p>
         </div>
 
         <!-- Image Section -->
         <div>
-            <img src="images/Untitlfdfdfed.webp" alt="Verification Image" class="rounded-lg shadow-lg">
+          <img
+            src="images/Untitlfdfdfed.webp"
+            alt="Verification Image"
+            class="rounded-lg shadow-lg"
+          />
         </div>
+      </div>
 
-    </div>
-
-    <div class="max-w-5xl mx-auto grid m-5 grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        
+      <div
+        class="max-w-5xl mx-auto grid m-5 grid-cols-1 md:grid-cols-2 gap-8 items-start"
+      >
         <!-- Text Section -->
         <div>
-            <h2 class="text-4xl font-bold text-left text-gray-900">Our Vision</h2>
-            <p class="mt-4  lowercase text-gray-700 text-left text-lg leading-relaxed">
-               <!-- " <span>OptimumTech</span> has earned numerous national and international accolades for our exceptional IT services. Notable achievements include winning the PASHA ICT Awards 2023, nomination for APicta ICT Awards Hong Kong 2023, receiving the NIC grant from NICF, and being a top-rated seller on Clutch.co. We are also proud to be a Microsoft Certified Solution Designing Partner, further solidifying our position as a leader in the IT industry" -->
-               <span class="uppercase">A</span>S WE CONTINUE TO EVOLVE AND GROW, OUR VISION
-               IS TO BE RECOGNIZED AS A PROMINENT PLAYER IN THE
-               SOFTWARE DEVELOPMENT INDUSTRY. WE STRIVE TO PROVIDE
-               BUSINESSES WITH INNOVATIVE SOFTWARE SOLUTIONS THAT
-               DRIVE EFFICIENCY, PRODUCTIVITY, AND GROWTH.
-               SIMULTANEOUSLY, WE ARE COMMITTED TO PREPARING
-               INDIVIDUALS FOR A RAPIDLY CHANGING IT LANDSCAPE,
-               HELPING THEM SEIZE OPPORTUNITIES AND REALIZE THEIR DREAMS.
-            </p>
+          <h2 class="text-4xl font-bold text-left text-gray-900">Our Vision</h2>
+          <p
+            class="mt-4 lowercase text-gray-700 text-left text-lg leading-relaxed"
+          >
+            <!-- " <span>OptimumTech</span> has earned numerous national and international accolades for our exceptional IT services. Notable achievements include winning the PASHA ICT Awards 2023, nomination for APicta ICT Awards Hong Kong 2023, receiving the NIC grant from NICF, and being a top-rated seller on Clutch.co. We are also proud to be a Microsoft Certified Solution Designing Partner, further solidifying our position as a leader in the IT industry" -->
+            <span class="uppercase">A</span>S WE CONTINUE TO EVOLVE AND GROW,
+            OUR VISION IS TO BE RECOGNIZED AS A PROMINENT PLAYER IN THE SOFTWARE
+            DEVELOPMENT INDUSTRY. WE STRIVE TO PROVIDE BUSINESSES WITH
+            INNOVATIVE SOFTWARE SOLUTIONS THAT DRIVE EFFICIENCY, PRODUCTIVITY,
+            AND GROWTH. SIMULTANEOUSLY, WE ARE COMMITTED TO PREPARING
+            INDIVIDUALS FOR A RAPIDLY CHANGING IT LANDSCAPE, HELPING THEM SEIZE
+            OPPORTUNITIES AND REALIZE THEIR DREAMS.
+          </p>
         </div>
 
         <!-- Image Section -->
         <div>
-            <img src="images/Untitlfdfdfed.webp" alt="Verification Image" class="rounded-lg shadow-lg">
+          <img
+            src="images/Untitlfdfdfed.webp"
+            alt="Verification Image"
+            class="rounded-lg shadow-lg"
+          />
         </div>
-
+      </div>
     </div>
-</div>
 
-
-
-
-<!-- video section -->
-  <!-- timer -->
-  <div
-  class="w-full px-16 py-6 rounded-xl bg-[#F7F7F7]  max-md:px-10 max-md:py-4 flex gap-5 max-md:flex-col justify-center items-center">
-  <div class="bg-white border-2 border-[#087B92] rounded-xl shadow-lg p-6 w-80 text-center">
-      <!-- Clock Image -->
-      <div class="flex justify-center">
-          <img src="images/clock.webp" alt="Clock" class="w-20 h-20 rounded-full">
-      </div>
-
-      <!-- Time -->
-      <p class="text-gray-700 font-semibold mt-2 text-sm">04:16:42 PM</p>
-
-      <!-- Country -->
-      <h3 class="text-lg font-bold text-gray-800 mt-1">Pakistan</h3>
-
-      <!-- Office Title -->
-      <p class="text-teal-600 font-semibold mt-1 text-sm">
-          Office 1 <span class="text-gray-800">(Headquarter)</span>
-      </p>
-
-      <!-- Address -->
-      <div class="mt-3">
-          <p class="text-gray-900 font-semibold text-lg">Address</p>
-          <p class="text-gray-600 text-sm">
-              Headquarter: 25-A, Batalacolony, <br>
-              People's Colony no 2, <br>
-              Faisalabad, Pakistan
-          </p>
-      </div>
-
-      <!-- Phone -->
-      <div class="mt-3">
-          <p class="text-gray-900 font-semibold text-lg">Phone</p>
-          <p class="text-gray-800 text-sm font-medium">+92 302 6650909</p>
-      </div>
-  </div>
-
-  <div class="bg-white border-2 border-[#087B92]  rounded-xl shadow-lg p-6 w-80 text-center">
-      <!-- Clock Image -->
-      <div class="flex justify-center">
-          <img src="images/clock.webp" alt="Clock" class="w-20 h-20 rounded-full">
-      </div>
-
-      <!-- Time -->
-      <p class="text-gray-700 font-semibold mt-2 text-sm">04:16:42 PM</p>
-
-      <!-- Country -->
-      <h3 class="text-lg font-bold text-gray-800 mt-1">Pakistan</h3>
-
-      <!-- Office Title -->
-      <p class="text-teal-600 font-semibold mt-1 text-sm">
-          Office 1 <span class="text-gray-800">(Headquarter)</span>
-      </p>
-
-      <!-- Address -->
-      <div class="mt-3">
-          <p class="text-gray-900 font-semibold text-lg">Address</p>
-          <p class="text-gray-600 text-sm">
-              Headquarter: 25-A, Batalacolony, <br>
-              People's Colony no 2, <br>
-              Faisalabad, Pakistan
-          </p>
-      </div>
-
-      <!-- Phone -->
-      <div class="mt-3">
-          <p class="text-gray-900 font-semibold text-lg">Phone</p>
-          <p class="text-gray-800 text-sm font-medium">+92 302 6650909</p>
-      </div>
-  </div>
-
-  <div class="bg-white border-2 border-[#087B92]  rounded-xl shadow-lg p-6 w-80 text-center">
-      <!-- Clock Image -->
-      <div class="flex justify-center">
-          <img src="images/clock.webp" alt="Clock" class="w-20 h-20 rounded-full">
-      </div>
-
-      <!-- Time -->
-      <p class="text-gray-700 font-semibold mt-2 text-sm">04:16:42 PM</p>
-
-      <!-- Country -->
-      <h3 class="text-lg font-bold text-gray-800 mt-1">Pakistan</h3>
-
-      <!-- Office Title -->
-      <p class="text-teal-600 font-semibold mt-1 text-sm">
-          Office 1 <span class="text-gray-800">(Headquarter)</span>
-      </p>
-
-      <!-- Address -->
-      <div class="mt-3">
-          <p class="text-gray-900 font-semibold text-lg">Address</p>
-          <p class="text-gray-600 text-sm">
-              Headquarter: 25-A, Batalacolony, <br>
-              People's Colony no 2, <br>
-              Faisalabad, Pakistan
-          </p>
-      </div>
-
-      <!-- Phone -->
-      <div class="mt-3">
-          <p class="text-gray-900 font-semibold text-lg">Phone</p>
-          <p class="text-gray-800 text-sm font-medium">+92 302 6650909</p>
-      </div>
-  </div>
-
-</div>
-
-
-
- <!-- footer section -->
- <footer class="bg-white text-gray-700 ">
+    <!-- video section -->
+    <!-- timer -->
     <div
-        class="w-full px-24 max-sm:px-10 max-md:px-16 max-sm:grid-cols-1 max-md:grid-cols-2 grid grid-cols-4 gap-5">
+      class="w-full px-16 py-6 rounded-xl bg-[#F7F7F7] max-md:px-10 max-md:py-4 flex gap-5 max-md:flex-col justify-center items-center"
+    >
+      <div
+        class="bg-white border-2 border-[#087B92] rounded-xl shadow-lg p-6 w-80 text-center"
+      >
+        <!-- Clock Image -->
+        <div class="flex justify-center">
+          <img
+            src="images/clock.webp"
+            alt="Clock"
+            class="w-20 h-20 rounded-full"
+          />
+        </div>
+
+        <!-- Time -->
+        <p class="text-gray-700 font-semibold mt-2 text-sm">04:16:42 PM</p>
+
+        <!-- Country -->
+        <h3 class="text-lg font-bold text-gray-800 mt-1">Pakistan</h3>
+
+        <!-- Office Title -->
+        <p class="text-teal-600 font-semibold mt-1 text-sm">
+          Office 1 <span class="text-gray-800">(Headquarter)</span>
+        </p>
+
+        <!-- Address -->
+        <div class="mt-3">
+          <p class="text-gray-900 font-semibold text-lg">Address</p>
+          <p class="text-gray-600 text-sm">
+            Headquarter: 25-A, Batalacolony, <br />
+            People's Colony no 2, <br />
+            Faisalabad, Pakistan
+          </p>
+        </div>
+
+        <!-- Phone -->
+        <div class="mt-3">
+          <p class="text-gray-900 font-semibold text-lg">Phone</p>
+          <p class="text-gray-800 text-sm font-medium">+92 302 6650909</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-2 border-[#087B92] rounded-xl shadow-lg p-6 w-80 text-center"
+      >
+        <!-- Clock Image -->
+        <div class="flex justify-center">
+          <img
+            src="images/clock.webp"
+            alt="Clock"
+            class="w-20 h-20 rounded-full"
+          />
+        </div>
+
+        <!-- Time -->
+        <p class="text-gray-700 font-semibold mt-2 text-sm">04:16:42 PM</p>
+
+        <!-- Country -->
+        <h3 class="text-lg font-bold text-gray-800 mt-1">Pakistan</h3>
+
+        <!-- Office Title -->
+        <p class="text-teal-600 font-semibold mt-1 text-sm">
+          Office 1 <span class="text-gray-800">(Headquarter)</span>
+        </p>
+
+        <!-- Address -->
+        <div class="mt-3">
+          <p class="text-gray-900 font-semibold text-lg">Address</p>
+          <p class="text-gray-600 text-sm">
+            Headquarter: 25-A, Batalacolony, <br />
+            People's Colony no 2, <br />
+            Faisalabad, Pakistan
+          </p>
+        </div>
+
+        <!-- Phone -->
+        <div class="mt-3">
+          <p class="text-gray-900 font-semibold text-lg">Phone</p>
+          <p class="text-gray-800 text-sm font-medium">+92 302 6650909</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border-2 border-[#087B92] rounded-xl shadow-lg p-6 w-80 text-center"
+      >
+        <!-- Clock Image -->
+        <div class="flex justify-center">
+          <img
+            src="images/clock.webp"
+            alt="Clock"
+            class="w-20 h-20 rounded-full"
+          />
+        </div>
+
+        <!-- Time -->
+        <p class="text-gray-700 font-semibold mt-2 text-sm">04:16:42 PM</p>
+
+        <!-- Country -->
+        <h3 class="text-lg font-bold text-gray-800 mt-1">Pakistan</h3>
+
+        <!-- Office Title -->
+        <p class="text-teal-600 font-semibold mt-1 text-sm">
+          Office 1 <span class="text-gray-800">(Headquarter)</span>
+        </p>
+
+        <!-- Address -->
+        <div class="mt-3">
+          <p class="text-gray-900 font-semibold text-lg">Address</p>
+          <p class="text-gray-600 text-sm">
+            Headquarter: 25-A, Batalacolony, <br />
+            People's Colony no 2, <br />
+            Faisalabad, Pakistan
+          </p>
+        </div>
+
+        <!-- Phone -->
+        <div class="mt-3">
+          <p class="text-gray-900 font-semibold text-lg">Phone</p>
+          <p class="text-gray-800 text-sm font-medium">+92 302 6650909</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="bg-white text-gray-700">
+      <div
+        class="w-full px-24 max-sm:px-10 max-md:px-16 max-sm:grid-cols-1 max-md:grid-cols-2 grid grid-cols-4 gap-5"
+      >
         <div class="flex flex-col text-left items-start justify-start">
-            <div class="logo h-24"><img src="images/logo_dark.png" class="h-24" alt="logo"></div>
-            <p class="text-[1.1rem] text-black w-[70%] ">Optimum Tech stands at the forefront of IT innovation,
-                specializing in both top-tier IT services and pioneering B2B tech products.</p>
-            <p class="text-[1.5rem] text-black mt-5">Social Links <span
-                    class="w-[80%] h-[1rem] bg-[#893810]"></span></p>
-            <div class="flex space-x-3 mt-2">
-                <a href="#" class="text-blue-600 text-xl"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-blue-700 text-xl"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-gray-900 text-xl"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-red-600 text-xl"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="text-red-500 text-xl"><i class="fas fa-envelope"></i></a>
-            </div>
+          <div class="logo h-24">
+            <img src="images/logo_dark.png" class="h-24" alt="logo" />
+          </div>
+          <p class="text-[1.1rem] text-black w-[70%]">
+            Optimum Tech stands at the forefront of IT innovation, specializing
+            in both top-tier IT services and pioneering B2B tech products.
+          </p>
+          <p class="text-[1.5rem] text-black mt-5">
+            Social Links <span class="w-[80%] h-[1rem] bg-[#893810]"></span>
+          </p>
+          <div class="flex space-x-3 mt-2">
+            <a href="#" class="text-blue-600 text-xl"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-blue-700 text-xl"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-gray-900 text-xl"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-red-600 text-xl"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-red-500 text-xl"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
         </div>
         <div>
-            <h3 class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4">Site Map</h3>
-            <ul class="space-y-2 text-left">
-                <li><a href="#" class="hover:text-teal-500">About</a></li>
-                <li><a href="#" class="hover:text-teal-500">Focus</a></li>
-                <li><a href="#" class="hover:text-teal-500">Industries</a></li>
-                <li><a href="#" class="hover:text-teal-500">Services</a></li>
-                <li><a href="#" class="hover:text-teal-500">Methodology</a></li>
-                <li><a href="#" class="hover:text-teal-500">Work</a></li>
-                <li><a href="#" class="hover:text-teal-500">Blogs</a></li>
-            </ul>
+          <h3
+            class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4"
+          >
+            Site Map
+          </h3>
+          <ul class="space-y-2 text-left">
+            <li><a href="#" class="hover:text-teal-500">About</a></li>
+            <li><a href="#" class="hover:text-teal-500">Focus</a></li>
+            <li><a href="#" class="hover:text-teal-500">Industries</a></li>
+            <li><a href="#" class="hover:text-teal-500">Services</a></li>
+            <li><a href="#" class="hover:text-teal-500">Methodology</a></li>
+            <li><a href="#" class="hover:text-teal-500">Work</a></li>
+            <li><a href="#" class="hover:text-teal-500">Blogs</a></li>
+          </ul>
         </div>
 
         <!-- Services -->
         <div>
-            <h3 class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4">Services</h3>
-            <ul class="space-y-2 ">
-                <li class="flex items-center gap-2"><span class="text-xl">🤖</span> AI/ML</li>
-                <li class="flex items-center gap-2"><span class="text-xl">📱</span> Mobile Applications</li>
-                <li class="flex items-center gap-2"><span class="text-xl">💻</span> Software Development</li>
-                <li class="flex items-center gap-2"><span class="text-xl">🌐</span> Web Development</li>
-                <li class="flex items-center gap-2"><span class="text-xl">📈</span> Digital Marketing & SEO</li>
-            </ul>
+          <h3
+            class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4"
+          >
+            Services
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <span class="text-xl">🤖</span> AI/ML
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">📱</span> Mobile Applications
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">💻</span> Software Development
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">🌐</span> Web Development
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">📈</span> Digital Marketing & SEO
+            </li>
+          </ul>
         </div>
 
         <!-- Gallery -->
         <div>
-            <h3 class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4">Gallery</h3>
-            <div class="grid grid-cols-3 gap-2">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 1">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 2">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 3">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 4">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 5">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 6">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 7">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 8">
-                <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 9">
-            </div>
+          <h3
+            class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4"
+          >
+            Gallery
+          </h3>
+          <div class="grid grid-cols-3 gap-2">
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 1"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 2"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 3"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 4"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 5"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 6"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 7"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 8"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 9"
+            />
+          </div>
         </div>
-
-
-    </div>
-    <!-- Bottom Section -->
-    <div class="border-t mt-8 p-4 border-black text-center text-[1rem]">
+      </div>
+      <!-- Bottom Section -->
+      <div class="border-t mt-8 p-4 border-black text-center text-[1rem]">
         <p>© 2025 . All rights reserved.</p>
-        <p class="text-gray-500">Automated page speed optimizations for fast site performance</p>
-    </div>
-</footer>
+        <p class="text-gray-500">
+          Automated page speed optimizations for fast site performance
+        </p>
+      </div>
+    </footer>
 
-
-<!-- Swiper.js JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+          el: ".swiper-pagination",
+          clickable: true,
         },
         breakpoints: {
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         },
-    });
-</script>
-
-
-</body>
+      });
+    </script>
+  </body>
 </html>
