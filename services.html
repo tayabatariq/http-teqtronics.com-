@@ -1,598 +1,936 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services || Infixdev | Hire developers & digital Marketers</title>
+    <link rel="shortcut icon" href="images/logo_dark.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services || Infixdev | Hire developers & digital Marketers</title>
-  <link rel="shortcut icon" href="images/logo_dark.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-   
-    
-  </style>
-</head>
-
-<body class="font-poppins ">
-  <!-- Navbar -->
-  <nav class="bg-white relative shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-20">
-        <div class="flex items-center">
-          <img width="130px m-1" src="./images/logo.jpg" alt="teqtronis logo" />
-        </div>
-        <div class="hidden mt-5 md:flex space-x-6">
-          <a href="index.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Home</a>
-          <a href="about.html" class="text-[#252B33] font-bold hover:text-[#087B92]">About</a>
-          <a href="services.html" id="servicetag" class="text-[#252B33] font-bold hover:text-[#087B92]">Services</a>
-          <!-- <a href="training.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Trainings</a> -->
-          <a href="contact.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Contact US</a>
-          <a href="blog.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Blogs</a>
-        </div>
-        <div class="hidden md:flex items-center">
-          <a href="#" class="bg-[#087B92] text-white px-4 py-2 rounded-full hover:bg-[#175a69]">Contact Us →</a>
-        </div>
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center">
-          <button id="menu-btn" class="text-gray-600 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <nav class="bg-white relative shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <div class="flex items-center">
+            <img
+              width="130px m-1"
+              src="./images/logo.jpg"
+              alt="teqtronis logo"
+            />
+          </div>
+          <div class="hidden mt-5 md:flex space-x-6">
+            <a
+              href="index.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >About</a
+            >
+            <a
+              href="services.html"
+              id="servicetag"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Services</a
+            >
+            <!-- <a href="training.html" class="text-[#252B33] font-bold hover:text-[#087B92]">Trainings</a> -->
+            <a
+              href="contact.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Contact US</a
+            >
+            <a
+              href="blog.html"
+              class="text-[#252B33] font-bold hover:text-[#087B92]"
+              >Blogs</a
+            >
+          </div>
+          <div class="hidden md:flex items-center">
+            <a
+              href="#"
+              class="bg-[#087B92] text-white px-4 py-2 rounded-full hover:bg-[#175a69]"
+              >Contact Us →</a
+            >
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Focus</a>
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Industries</a>
-      <a href="#" class="block px-4 py-2 text-blue-500 font-semibold hover:bg-gray-100">Services</a>
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Methodology</a>
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Work</a>
-      <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blogs</a>
-      <a href="#" class="block px-4 py-2 text-center bg-bg-[#087B92] text-white hover:bg-[#087B92]">Contact Us →</a>
-    </div>
-  </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200"
+      >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >About</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Focus</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Industries</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-blue-500 font-semibold hover:bg-gray-100"
+          >Services</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Methodology</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Work</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+          >Blogs</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-center bg-bg-[#087B92] text-white hover:bg-[#087B92]"
+          >Contact Us →</a
+        >
+      </div>
+    </nav>
 
-
-  <!-- opennav -->
-  <div id="openav" class="max-w-4xl hidden absolute top-10 left-44 z-10 mx-auto flex bg-white p-6 rounded-lg shadow-md">
-    <!-- Left Section -->
-    <div class="bg-gradient-to-b from-[#087B92] to-[#332D34] text-white p-6 rounded-lg w-1/3 flex flex-col items-center">
+    <!-- opennav -->
+    <div
+      id="openav"
+      class="max-w-4xl hidden absolute top-10 left-44 z-10 mx-auto flex bg-white p-6 rounded-lg shadow-md"
+    >
+      <!-- Left Section -->
+      <div
+        class="bg-gradient-to-b from-[#087B92] to-[#332D34] text-white p-6 rounded-lg w-1/3 flex flex-col items-center"
+      >
         <div class="flex space-x-2 mb-4">
-            <img src="images/SWIPERIMAG4.png" class="w-10 h-10 rounded-full border-2 border-white">
-            <img src="images/SWIPERIMAG5.webp" class="w-10 h-10 rounded-full border-2 border-white">
-            <img src="images/SWIPERIMAG5.webp" class="w-10 h-10 rounded-full border-2 border-white">
+          <img
+            src="images/SWIPERIMAG4.png"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <img
+            src="images/SWIPERIMAG5.webp"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
+          <img
+            src="images/SWIPERIMAG5.webp"
+            class="w-10 h-10 rounded-full border-2 border-white"
+          />
         </div>
         <h2 class="text-lg font-bold">BUILD YOUR</h2>
         <h1 class="text-2xl font-bold">Agile Team</h1>
-        <p class="text-sm mt-2 text-center">Create your own agile team by forming the right set of resources skilled in specific streams</p>
-        <button class="mt-4 bg-white text-teal-700 px-4 py-2 rounded-md font-medium">Contact Us</button>
-    </div>
-    
-    <!-- Right Section -->
-    <div class="w-2/3  p-6 grid grid-cols-2 gap-4 text-gray-800">
-        <div class="flex items-center space-x-3">
-           <i class="fas fa-robot text-xl"></i>
-            <span>AI/ML</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-globe text-xl"></i>
-            <span>Digital marketing & SEO</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-mobile-alt text-xl"></i>
-            <span>Mobile Applications</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-cogs text-xl"></i>
-            <span>Technical Resource</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-laptop-code text-xl"></i>
-            <span>Software Development</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-chalkboard-teacher text-xl"></i>
-            <span>Technical Trainings</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-code text-xl"></i>
-            <span>Web Development</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-pencil-ruler text-xl"></i>
-            <span>UX/UI Designing</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-store text-xl"></i>
-            <span>E-commerce Stores Setup</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-users text-xl"></i>
-            <span>Social Media Market</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-link text-xl"></i>
-            <span>BlockChain Systems</span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <i class="fas fa-server text-xl"></i>
-            <span>DevOps</span>
-        </div>
-    </div>
-</div>
-  <!-- services heading -->
-
-  <div class="flex justify-center -mt-7 items-center min-h-screen">
-    <div class="text-center max-w-5xl bpx-6">
-      <h1 class="text-4xl md:text-[3.6rem] blur-[.4px] font-extrabold text-gray-900 leading-[3.6rem]">
-        Hire Custom Web and Mobile <br />
-        Software Development Services
-        Company
-      </h1>
-      <p class="text-gray-600 text-lg mt-4 leading-relaxed">
-        Optimum Tech offers Web and Mobile Software Development Services, we
-        pride ourselves on delivering cutting-edge
-        <strong class="font-bold">IT solutions</strong> tailored to meet the
-        unique needs of our clients. Our expertise spans across a spectrum of
-        services, ensuring a comprehensive approach to digital transformation.
-        Explore the diverse range of Web and Mobile Software Development
-        Services we offer.
-      </p>
-    </div>
-  </div>
-
-
-  <!-- services image section -->
-  <div
-    class="w-full min-h-screen max-md:flex-col max-md:px-6 max-md:py-4 px-10 py-6 flex gap-4 justify-between items-start ">
-    <div class="w-1/2 max-md:w-full">
-      <h1 class="text-[3rem] max-md:text-[2rem] font-extrabold blur-[.4px] leading-tight ">Mobile Hybrid App Development
-        with Flutter</h1>
-      <p class="text-[1.1rem] blur-[.4px] text-gray-700 font-medium mt-5 space-y-1">Leverage the power of cross-platform
-        mobile development with Flutter. Our skilled team of developers crafts seamless and high-performance hybrid apps
-        that run flawlessly on both iOS and Android platforms. With Flutter's expressive UI, we bring your ideas to
-        life, delivering an engaging user experience. Flutter is a popular framework for developing cross-platform
-        mobile applications, allowing you to use a single codebase to create apps for both Android and iOS. It offers a
-        rich set of pre-designed widgets, a fast development process, and a hot reload feature that makes it easier to
-        experiment, build UIs, add features, and fix bugs</p>
-      <div class="w-full  flex justify-start mt-12  items-start gap-5">
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/android-svgrepo-com.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/apple-svgrepo-com-2.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/flutter-svgrepo-com.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><svg class="w-full h-full object-cover"
-            xmlns="http://www.w3.org/2000/svg" fill="#000000" width="83px" height="83px" viewBox="0 -1.5 27 27">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="m15.902 11.974c0 1.331-1.079 2.41-2.41 2.41s-2.41-1.079-2.41-2.41 1.079-2.41 2.41-2.41 2.41 1.079 2.41 2.41z">
-              </path>
-              <path
-                d="m13.491 17.494c-.201.005-.438.008-.676.008-2.811 0-5.522-.425-8.073-1.214l.193.051c-1.351-.436-2.522-1.079-3.541-1.903l.021.016c-.789-.571-1.32-1.455-1.41-2.467l-.001-.013c0-1.594 1.747-3.154 4.681-4.172 2.512-.827 5.403-1.304 8.405-1.304.139 0 .278.001.417.003h-.021c.116-.002.252-.003.389-.003 2.965 0 5.82.469 8.496 1.337l-.195-.055c1.305.424 2.438 1.036 3.433 1.814l-.024-.018c.775.546 1.298 1.404 1.386 2.387l.001.013c0 1.656-1.954 3.332-5.103 4.374-2.363.729-5.08 1.149-7.895 1.149-.17 0-.339-.002-.508-.005h.025zm0-9.84c-.106-.002-.232-.002-.358-.002-2.881 0-5.656.452-8.259 1.289l.191-.053c-2.698.941-3.908 2.228-3.908 3.087 0 .893 1.301 2.3 4.153 3.274 2.249.697 4.834 1.099 7.513 1.099.235 0 .469-.003.702-.009l-.034.001c.146.003.318.005.49.005 2.684 0 5.274-.4 7.715-1.143l-.187.049c2.96-.984 4.32-2.391 4.32-3.28-.102-.638-.462-1.176-.966-1.515l-.008-.005c-.866-.674-1.876-1.217-2.97-1.574l-.07-.02c-2.368-.766-5.093-1.208-7.92-1.208-.142 0-.283.001-.424.003h.021z">
-              </path>
-              <path
-                d="m8.023 23.986c-.016 0-.035.001-.053.001-.453 0-.878-.119-1.245-.327l.013.007c-1.378-.8-1.858-3.092-1.28-6.141.697-3.128 1.827-5.894 3.344-8.4l-.069.124c1.499-2.655 3.31-4.926 5.425-6.872l.02-.018c.923-.844 2.003-1.537 3.187-2.028l.073-.027c.407-.196.885-.31 1.39-.31.501 0 .976.113 1.4.314l-.02-.008c1.435.826 1.911 3.36 1.238 6.606-.72 2.967-1.818 5.58-3.262 7.959l.07-.123c-1.452 2.63-3.209 4.882-5.266 6.819l-.014.013c-.958.877-2.083 1.59-3.321 2.082l-.074.026c-.46.181-.992.292-1.549.305h-.006zm1.205-14.447.499.288c-1.381 2.28-2.465 4.926-3.106 7.74l-.034.18c-.533 2.809-.019 4.498.72 4.926.191.102.417.161.657.161.02 0 .041 0 .061-.001h-.003c.955 0 2.458-.605 4.196-2.122 1.976-1.867 3.654-4.023 4.972-6.404l.068-.135c1.318-2.156 2.371-4.653 3.025-7.307l.038-.182c.629-3.058.086-4.93-.686-5.378-.238-.094-.514-.148-.802-.148-.364 0-.708.087-1.012.24l.013-.006c-1.118.465-2.078 1.086-2.907 1.846l.007-.006c-2.041 1.881-3.772 4.057-5.136 6.468l-.069.132z">
-              </path>
-              <path
-                d="m18.96 24c-1.306 0-2.96-.787-4.69-2.276-2.175-1.983-4.017-4.282-5.464-6.834l-.072-.137c-1.43-2.349-2.551-5.075-3.215-7.975l-.036-.185c-.162-.709-.255-1.522-.255-2.357 0-.527.037-1.044.108-1.551l-.007.058c.085-.998.608-1.858 1.372-2.399l.01-.007c1.43-.83 3.865.024 6.342 2.228 2.022 1.914 3.748 4.113 5.118 6.54l.072.138c1.428 2.297 2.557 4.961 3.242 7.798l.038.186c.163.709.257 1.524.257 2.36 0 .577-.044 1.143-.13 1.696l.008-.062c-.103 1.022-.644 1.901-1.429 2.456l-.011.007c-.348.199-.764.316-1.207.316-.018 0-.036 0-.054-.001h.003zm-9.228-9.823c1.458 2.571 3.217 4.771 5.271 6.656l.02.018c2.166 1.863 3.884 2.266 4.628 1.834.773-.446 1.339-2.276.754-5.233-.702-2.89-1.787-5.434-3.219-7.741l.065.112c-1.379-2.456-3.027-4.562-4.948-6.384l-.012-.011c-2.334-2.074-4.225-2.54-4.998-2.094-.473.385-.784.952-.825 1.593v.007c-.055.39-.086.84-.086 1.298 0 .757.086 1.493.248 2.201l-.013-.066c.673 2.952 1.747 5.559 3.182 7.924l-.066-.117z">
-              </path>
-            </g>
-          </svg></div>
-
+        <p class="text-sm mt-2 text-center">
+          Create your own agile team by forming the right set of resources
+          skilled in specific streams
+        </p>
+        <button
+          class="mt-4 bg-white text-teal-700 px-4 py-2 rounded-md font-medium"
+        >
+          Contact Us
+        </button>
       </div>
-      <div class="bg-white p-6 flex justify-start items-start flex-col">
-        <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 pl-0 text-gray-800 text-lg">
-          <ul class="space-y-3">
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Native iOS App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium" class="flex items-center">• Cross-platform App Development
-            </li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Wearable App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Xamarin App Development</li>
-          </ul>
-          <ul class="space-y-3">
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Native Android App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Hybrid App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• React Native App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Flutter App Development</li>
-          </ul>
+
+      <!-- Right Section -->
+      <div class="w-2/3 p-6 grid grid-cols-2 gap-4 text-gray-800">
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-robot text-xl"></i>
+          <span>AI/ML</span>
         </div>
-        <div class="mt-6 text-center">
-          <button class="bg-red-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-red-600">
-            Mobile App Developers
-          </button>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-globe text-xl"></i>
+          <span>Digital marketing & SEO</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-mobile-alt text-xl"></i>
+          <span>Mobile Applications</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-cogs text-xl"></i>
+          <span>Technical Resource</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-laptop-code text-xl"></i>
+          <span>Software Development</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-chalkboard-teacher text-xl"></i>
+          <span>Technical Trainings</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-code text-xl"></i>
+          <span>Web Development</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-pencil-ruler text-xl"></i>
+          <span>UX/UI Designing</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-store text-xl"></i>
+          <span>E-commerce Stores Setup</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-users text-xl"></i>
+          <span>Social Media Market</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-link text-xl"></i>
+          <span>BlockChain Systems</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-server text-xl"></i>
+          <span>DevOps</span>
         </div>
       </div>
     </div>
-    <div class="w-1/2 max-md:w-full">
-      <img src="images/services-mobile-app-development.png" alt="sevices mobile app development">
-    </div>
-  </div>
+    <!-- services heading -->
 
-
-
-
-  <div
-    class="w-full min-h-screen max-md:flex-col max-md:px-6 max-md:py-4 px-10 py-6 flex gap-4 justify-between items-start ">
-    <div class="w-1/2 max-md:w-full">
-      <img src="images/img-services-ui-ux-design.png" alt="sevices mobile app development">
-    </div>
-    <div class="w-1/2 max-md:w-full">
-      <h1 class="text-[3rem] max-md:text-[2rem] font-extrabold blur-[.4px] leading-tight ">UI/UX Design</h1>
-      <p class="text-[1.1rem] blur-[.4px] text-gray-700 font-medium mt-5 space-y-1">Unleash the potential of your
-        digital products through intuitive and visually stunning User Experience (UX) and User Interface (UI) design.
-        Our design experts combine creativity with user-centric principles, ensuring that your applications and websites
-        not only look captivating but also provide a seamless and enjoyable interaction for your users.If you're looking
-        for information or assistance related to UI/UX design services offered by Optimum Tech, it's recommended to
-        visit their official website or contact them directly for the most accurate and up-to-date information.</p>
-      <div class="w-full  flex justify-start mt-12  items-start gap-5">
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/android-svgrepo-com.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/apple-svgrepo-com-2.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/flutter-svgrepo-com.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><svg class="w-full h-full object-cover"
-            xmlns="http://www.w3.org/2000/svg" fill="#000000" width="83px" height="83px" viewBox="0 -1.5 27 27">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="m15.902 11.974c0 1.331-1.079 2.41-2.41 2.41s-2.41-1.079-2.41-2.41 1.079-2.41 2.41-2.41 2.41 1.079 2.41 2.41z">
-              </path>
-              <path
-                d="m13.491 17.494c-.201.005-.438.008-.676.008-2.811 0-5.522-.425-8.073-1.214l.193.051c-1.351-.436-2.522-1.079-3.541-1.903l.021.016c-.789-.571-1.32-1.455-1.41-2.467l-.001-.013c0-1.594 1.747-3.154 4.681-4.172 2.512-.827 5.403-1.304 8.405-1.304.139 0 .278.001.417.003h-.021c.116-.002.252-.003.389-.003 2.965 0 5.82.469 8.496 1.337l-.195-.055c1.305.424 2.438 1.036 3.433 1.814l-.024-.018c.775.546 1.298 1.404 1.386 2.387l.001.013c0 1.656-1.954 3.332-5.103 4.374-2.363.729-5.08 1.149-7.895 1.149-.17 0-.339-.002-.508-.005h.025zm0-9.84c-.106-.002-.232-.002-.358-.002-2.881 0-5.656.452-8.259 1.289l.191-.053c-2.698.941-3.908 2.228-3.908 3.087 0 .893 1.301 2.3 4.153 3.274 2.249.697 4.834 1.099 7.513 1.099.235 0 .469-.003.702-.009l-.034.001c.146.003.318.005.49.005 2.684 0 5.274-.4 7.715-1.143l-.187.049c2.96-.984 4.32-2.391 4.32-3.28-.102-.638-.462-1.176-.966-1.515l-.008-.005c-.866-.674-1.876-1.217-2.97-1.574l-.07-.02c-2.368-.766-5.093-1.208-7.92-1.208-.142 0-.283.001-.424.003h.021z">
-              </path>
-              <path
-                d="m8.023 23.986c-.016 0-.035.001-.053.001-.453 0-.878-.119-1.245-.327l.013.007c-1.378-.8-1.858-3.092-1.28-6.141.697-3.128 1.827-5.894 3.344-8.4l-.069.124c1.499-2.655 3.31-4.926 5.425-6.872l.02-.018c.923-.844 2.003-1.537 3.187-2.028l.073-.027c.407-.196.885-.31 1.39-.31.501 0 .976.113 1.4.314l-.02-.008c1.435.826 1.911 3.36 1.238 6.606-.72 2.967-1.818 5.58-3.262 7.959l.07-.123c-1.452 2.63-3.209 4.882-5.266 6.819l-.014.013c-.958.877-2.083 1.59-3.321 2.082l-.074.026c-.46.181-.992.292-1.549.305h-.006zm1.205-14.447.499.288c-1.381 2.28-2.465 4.926-3.106 7.74l-.034.18c-.533 2.809-.019 4.498.72 4.926.191.102.417.161.657.161.02 0 .041 0 .061-.001h-.003c.955 0 2.458-.605 4.196-2.122 1.976-1.867 3.654-4.023 4.972-6.404l.068-.135c1.318-2.156 2.371-4.653 3.025-7.307l.038-.182c.629-3.058.086-4.93-.686-5.378-.238-.094-.514-.148-.802-.148-.364 0-.708.087-1.012.24l.013-.006c-1.118.465-2.078 1.086-2.907 1.846l.007-.006c-2.041 1.881-3.772 4.057-5.136 6.468l-.069.132z">
-              </path>
-              <path
-                d="m18.96 24c-1.306 0-2.96-.787-4.69-2.276-2.175-1.983-4.017-4.282-5.464-6.834l-.072-.137c-1.43-2.349-2.551-5.075-3.215-7.975l-.036-.185c-.162-.709-.255-1.522-.255-2.357 0-.527.037-1.044.108-1.551l-.007.058c.085-.998.608-1.858 1.372-2.399l.01-.007c1.43-.83 3.865.024 6.342 2.228 2.022 1.914 3.748 4.113 5.118 6.54l.072.138c1.428 2.297 2.557 4.961 3.242 7.798l.038.186c.163.709.257 1.524.257 2.36 0 .577-.044 1.143-.13 1.696l.008-.062c-.103 1.022-.644 1.901-1.429 2.456l-.011.007c-.348.199-.764.316-1.207.316-.018 0-.036 0-.054-.001h.003zm-9.228-9.823c1.458 2.571 3.217 4.771 5.271 6.656l.02.018c2.166 1.863 3.884 2.266 4.628 1.834.773-.446 1.339-2.276.754-5.233-.702-2.89-1.787-5.434-3.219-7.741l.065.112c-1.379-2.456-3.027-4.562-4.948-6.384l-.012-.011c-2.334-2.074-4.225-2.54-4.998-2.094-.473.385-.784.952-.825 1.593v.007c-.055.39-.086.84-.086 1.298 0 .757.086 1.493.248 2.201l-.013-.066c.673 2.952 1.747 5.559 3.182 7.924l-.066-.117z">
-              </path>
-            </g>
-          </svg></div>
-
-      </div>
-      <div class="bg-white p-6 flex justify-start items-start flex-col">
-        <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 pl-0 text-gray-800 text-lg">
-          <ul class="space-y-3">
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Native iOS App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium" class="flex items-center">• Cross-platform App Development
-            </li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Wearable App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Xamarin App Development</li>
-          </ul>
-          <ul class="space-y-3">
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Native Android App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Hybrid App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• React Native App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Flutter App Development</li>
-          </ul>
-        </div>
-        <div class="mt-6 text-center">
-          <button class="bg-red-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-red-600">
-            Mobile App Developers
-          </button>
-        </div>
+    <div class="flex justify-center -mt-7 items-center min-h-screen">
+      <div class="text-center max-w-5xl bpx-6">
+        <h1
+          class="text-4xl md:text-[3.6rem] blur-[.4px] font-extrabold text-gray-900 leading-[3.6rem]"
+        >
+          Hire Custom Web and Mobile <br />
+          Software Development Services Company
+        </h1>
+        <p class="text-gray-600 text-lg mt-4 leading-relaxed">
+          TeqTronics provides top-notch
+          <span class="font-bold"
+            >Web and Mobile Software Development Services</span
+          >, specializing in innovative
+          <span class="font-semibold">IT solutions</span> tailored to your
+          business needs. Our expertise covers a wide range of services,
+          ensuring a seamless digital transformation experience. Discover the
+          comprehensive <span class="font-semibold">Web and Mobile Software Development</span> Services we offer to
+          help your business thrive.
+        </p>
       </div>
     </div>
 
-  </div>
-
-
-  <div
-    class="w-full min-h-screen max-md:flex-col max-md:px-6 max-md:py-4 px-10 py-6 flex gap-4 justify-between items-start ">
-    <div class="w-1/2 max-md:w-full">
-      <h1 class="text-[3rem] max-md:text-[2rem] font-extrabold blur-[.4px] leading-tight ">Mobile Hybrid App Development
-        with Flutter</h1>
-      <p class="text-[1.1rem] blur-[.4px] text-gray-700 font-medium mt-5 space-y-1">Leverage the power of cross-platform
-        mobile development with Flutter. Our skilled team of developers crafts seamless and high-performance hybrid apps
-        that run flawlessly on both iOS and Android platforms. With Flutter's expressive UI, we bring your ideas to
-        life, delivering an engaging user experience. Flutter is a popular framework for developing cross-platform
-        mobile applications, allowing you to use a single codebase to create apps for both Android and iOS. It offers a
-        rich set of pre-designed widgets, a fast development process, and a hot reload feature that makes it easier to
-        experiment, build UIs, add features, and fix bugs</p>
-      <div class="w-full  flex justify-start mt-12  items-start gap-5">
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/android-svgrepo-com.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/apple-svgrepo-com-2.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><img class="w-full h-full object-cover"
-            src="/images/flutter-svgrepo-com.svg" /></div>
-        <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md"><svg class="w-full h-full object-cover"
-            xmlns="http://www.w3.org/2000/svg" fill="#000000" width="83px" height="83px" viewBox="0 -1.5 27 27">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="m15.902 11.974c0 1.331-1.079 2.41-2.41 2.41s-2.41-1.079-2.41-2.41 1.079-2.41 2.41-2.41 2.41 1.079 2.41 2.41z">
-              </path>
-              <path
-                d="m13.491 17.494c-.201.005-.438.008-.676.008-2.811 0-5.522-.425-8.073-1.214l.193.051c-1.351-.436-2.522-1.079-3.541-1.903l.021.016c-.789-.571-1.32-1.455-1.41-2.467l-.001-.013c0-1.594 1.747-3.154 4.681-4.172 2.512-.827 5.403-1.304 8.405-1.304.139 0 .278.001.417.003h-.021c.116-.002.252-.003.389-.003 2.965 0 5.82.469 8.496 1.337l-.195-.055c1.305.424 2.438 1.036 3.433 1.814l-.024-.018c.775.546 1.298 1.404 1.386 2.387l.001.013c0 1.656-1.954 3.332-5.103 4.374-2.363.729-5.08 1.149-7.895 1.149-.17 0-.339-.002-.508-.005h.025zm0-9.84c-.106-.002-.232-.002-.358-.002-2.881 0-5.656.452-8.259 1.289l.191-.053c-2.698.941-3.908 2.228-3.908 3.087 0 .893 1.301 2.3 4.153 3.274 2.249.697 4.834 1.099 7.513 1.099.235 0 .469-.003.702-.009l-.034.001c.146.003.318.005.49.005 2.684 0 5.274-.4 7.715-1.143l-.187.049c2.96-.984 4.32-2.391 4.32-3.28-.102-.638-.462-1.176-.966-1.515l-.008-.005c-.866-.674-1.876-1.217-2.97-1.574l-.07-.02c-2.368-.766-5.093-1.208-7.92-1.208-.142 0-.283.001-.424.003h.021z">
-              </path>
-              <path
-                d="m8.023 23.986c-.016 0-.035.001-.053.001-.453 0-.878-.119-1.245-.327l.013.007c-1.378-.8-1.858-3.092-1.28-6.141.697-3.128 1.827-5.894 3.344-8.4l-.069.124c1.499-2.655 3.31-4.926 5.425-6.872l.02-.018c.923-.844 2.003-1.537 3.187-2.028l.073-.027c.407-.196.885-.31 1.39-.31.501 0 .976.113 1.4.314l-.02-.008c1.435.826 1.911 3.36 1.238 6.606-.72 2.967-1.818 5.58-3.262 7.959l.07-.123c-1.452 2.63-3.209 4.882-5.266 6.819l-.014.013c-.958.877-2.083 1.59-3.321 2.082l-.074.026c-.46.181-.992.292-1.549.305h-.006zm1.205-14.447.499.288c-1.381 2.28-2.465 4.926-3.106 7.74l-.034.18c-.533 2.809-.019 4.498.72 4.926.191.102.417.161.657.161.02 0 .041 0 .061-.001h-.003c.955 0 2.458-.605 4.196-2.122 1.976-1.867 3.654-4.023 4.972-6.404l.068-.135c1.318-2.156 2.371-4.653 3.025-7.307l.038-.182c.629-3.058.086-4.93-.686-5.378-.238-.094-.514-.148-.802-.148-.364 0-.708.087-1.012.24l.013-.006c-1.118.465-2.078 1.086-2.907 1.846l.007-.006c-2.041 1.881-3.772 4.057-5.136 6.468l-.069.132z">
-              </path>
-              <path
-                d="m18.96 24c-1.306 0-2.96-.787-4.69-2.276-2.175-1.983-4.017-4.282-5.464-6.834l-.072-.137c-1.43-2.349-2.551-5.075-3.215-7.975l-.036-.185c-.162-.709-.255-1.522-.255-2.357 0-.527.037-1.044.108-1.551l-.007.058c.085-.998.608-1.858 1.372-2.399l.01-.007c1.43-.83 3.865.024 6.342 2.228 2.022 1.914 3.748 4.113 5.118 6.54l.072.138c1.428 2.297 2.557 4.961 3.242 7.798l.038.186c.163.709.257 1.524.257 2.36 0 .577-.044 1.143-.13 1.696l.008-.062c-.103 1.022-.644 1.901-1.429 2.456l-.011.007c-.348.199-.764.316-1.207.316-.018 0-.036 0-.054-.001h.003zm-9.228-9.823c1.458 2.571 3.217 4.771 5.271 6.656l.02.018c2.166 1.863 3.884 2.266 4.628 1.834.773-.446 1.339-2.276.754-5.233-.702-2.89-1.787-5.434-3.219-7.741l.065.112c-1.379-2.456-3.027-4.562-4.948-6.384l-.012-.011c-2.334-2.074-4.225-2.54-4.998-2.094-.473.385-.784.952-.825 1.593v.007c-.055.39-.086.84-.086 1.298 0 .757.086 1.493.248 2.201l-.013-.066c.673 2.952 1.747 5.559 3.182 7.924l-.066-.117z">
-              </path>
-            </g>
-          </svg></div>
-
+    <!-- services image section -->
+    <div
+      class="w-full min-h-screen max-md:flex-col max-md:px-6 max-md:py-4 px-10 py-6 flex gap-4 justify-between items-start"
+    >
+      <div class="w-1/2 max-md:w-full">
+        <h1
+          class="text-[3rem] max-md:text-[2rem] font-extrabold blur-[.4px] leading-tight"
+        >
+        IT Trainings with TeqTronics
+        </h1>
+        <p
+          class="text-[1.1rem] blur-[.4px] text-gray-700 font-medium mt-5 space-y-1"
+        >
+        Enhance your technical skills with expert-led IT training at <span class="font-bold">TeqTronics</span>. Our structured and interactive training programs cover a wide range of technology domains, including software development, cybersecurity, and more. Whether you're a beginner or an advanced learner, our hands-on approach ensures an engaging and effective learning experience. With industry-relevant courses and step-by-step guidance, we empower you to master the latest technologies and advance your career in the digital world.
+        </p>
+        <div class="w-full flex justify-start mt-12 items-start gap-5">
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="https://cdn-icons-png.freepik.com/256/460/460696.png?semt=ais_hybrid" alt="laptop-with-coding"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyWLlW7dKlQDcQsRZkE2QE7ls8RKI-gZEeg&s" alt="Group of people in a tech training session "
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEhSsJBIfb17B0sERQqMqDdXuHW3pyITd1A&s" alt="Brain with tech elements"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+           <img src="https://static-00.iconduck.com/assets.00/logo-python-icon-506x512-t38ct41x.png" alt="icon of python">
+          </div>
+        </div>
+        <div class="bg-white p-6 flex justify-start items-start flex-col">
+          <div
+            class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 pl-0 text-gray-800 text-lg"
+          >
+            <ul class="space-y-3">
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                •Software Development Training
+              </li>
+              <li
+                class="text-[.9rem] blur-[.3px] font-medium"
+                class="flex items-center"
+              >
+                •Cybersecurity Training
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                •  Web Development Training
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                •Mobile App Development Training
+              </li>
+            </ul>
+            <ul class="space-y-3">
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Cloud Computing Training
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Data Science & AI Training
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Networking & IT Infrastructure Training
+              </li>
+             
+            </ul>
+          </div>
+          <div class="mt-6 text-center">
+            <button
+              class="bg-red-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-red-600"
+            >
+              Mobile App Developers
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="bg-white p-6 flex justify-start items-start flex-col">
-        <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 pl-0 text-gray-800 text-lg">
-          <ul class="space-y-3">
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Native iOS App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium" class="flex items-center">• Cross-platform App Development
-            </li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Wearable App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Xamarin App Development</li>
-          </ul>
-          <ul class="space-y-3">
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Native Android App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Hybrid App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• React Native App Development</li>
-            <li class="text-[.9rem] blur-[.3px] font-medium">• Flutter App Development</li>
-          </ul>
-        </div>
-        <div class="mt-6 text-center">
-          <button class="bg-red-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-red-600">
-            Mobile App Developers
-          </button>
-        </div>
+      <div class="w-1/2 max-md:w-full">
+        <img
+          src="images/services-mobile-app-development.png"
+          alt="sevices mobile app development"
+        />
       </div>
     </div>
-    <div class="w-1/2 max-md:w-full">
-      <img src="images/img-services-iot-solution.png" alt="sevices mobile app development">
-    </div>
-  </div>
-
-
-  <!-- next section part -->
-  <div class="w-full min-h-screen  flex flex-col   items-center max-md:px-4  px-10  ">
-    <p class="text-[2.7rem] font-medium  blur-[.4px]">Our Experties</p>
-    <h1 class="text-[2.6rem] leading-tight text-center font-bold blur-[.4px]">Web and Mobile Software Development
-      Services</h1>
-    <p class="text-[1rem] text-center w-[87%]">We are a dedicated team of tech enthusiasts committed to transforming
-      your ideas into cutting-edge digital solutions. Our comprehensive range of Web and Mobile Software Development
-      Services ensures that your business stays ahead in the dynamic world of technology.</p>
 
     <div
-      class="w-full min-h-screen grid grid-cols-2 text-center pl-10  gap-4 my-5  max-md:grid-cols-1 max-md:grid-rows-4">
-      <div
-        class="border text-left border-gray-300 p-6  hover:bg-[#F4F0FF]  transition-all duration-500  rounded-md bg-white shadow-sm max-w-lg">
-        <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
-        <ul class="text-gray-700 space-y-2 ">
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Full-Stack Development:</strong> From frontend to backend, we create seamless and responsive web
-              applications tailored to your business needs.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>E-commerce Solutions:</strong> Boost your online presence with secure and scalable e-commerce
-              platforms that enhance user experience and drive conversions.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Custom Web Portals:</strong> Streamline your business processes with personalized web portals
-              that improve collaboration and efficiency.</p>
-          </li>
-        </ul>
+      class="w-full min-h-screen max-md:flex-col max-md:px-6 max-md:py-4 px-10 py-6 flex gap-4 justify-between items-start"
+    >
+      <div class="w-1/2 max-md:w-full">
+        <img
+          src="images/img-services-ui-ux-design.png"
+          alt="sevices mobile app development"
+        />
       </div>
-
-      <div
-        class="border text-left  border-gray-300 p-6  hover:bg-[#F4F0FF] transition-all duration-500   rounded-md bg-white shadow-sm max-w-lg">
-        <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
-        <ul class="text-gray-700 space-y-2 text-base">
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Full-Stack Development:</strong> From frontend to backend, we create seamless and responsive web
-              applications tailored to your business needs.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>E-commerce Solutions:</strong> Boost your online presence with secure and scalable e-commerce
-              platforms that enhance user experience and drive conversions.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Custom Web Portals:</strong> Streamline your business processes with personalized web portals
-              that improve collaboration and efficiency.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div
-        class="border text-left border-gray-300 p-6  hover:bg-[#F4F0FF] transition-all duration-500  rounded-md bg-white shadow-sm max-w-lg">
-        <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
-        <ul class="text-gray-700 space-y-2 text-base">
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Full-Stack Development:</strong> From frontend to backend, we create seamless and responsive web
-              applications tailored to your business needs.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>E-commerce Solutions:</strong> Boost your online presence with secure and scalable e-commerce
-              platforms that enhance user experience and drive conversions.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Custom Web Portals:</strong> Streamline your business processes with personalized web portals
-              that improve collaboration and efficiency.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div
-        class="border text-left border-gray-300 p-6  hover:bg-[#F4F0FF] transition-all duration-500 rounded-lg bg-white shadow-sm max-w-lg">
-        <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
-        <ul class="text-gray-700 space-y-2 text-base">
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Full-Stack Development:</strong> From frontend to backend, we create seamless and responsive web
-              applications tailored to your business needs.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>E-commerce Solutions:</strong> Boost your online presence with secure and scalable e-commerce
-              platforms that enhance user experience and drive conversions.</p>
-          </li>
-          <li class="flex">
-            <span class="text-lg mr-2">◦</span>
-            <p><strong>Custom Web Portals:</strong> Streamline your business processes with personalized web portals
-              that improve collaboration and efficiency.</p>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="w-full min-h-screen relative max-md:flex-col mb-5 max-md:px-10 px-20 py-5 flex justify-start items-start mt-5 gap-5 ">
-    <div class="w-1/2 sticky max-md:relative max-md:w-full  top-0">
-      <h3 class="text-[3rem] max-md:text-[2.3rem] max-md:leading-[2.3rem] leading-[3.2rem] blur-[.5px] font-extrabold text-[#077B93]">Why Choose Optimum Tech Web and
-        Mobile Software Development Services?</h3>
-      <p class="text-[1rem]  mt-5 text-gray-600 w-[92%] font-medium">Optimum Tech Web and Mobile Software Development
-        Services to unlock the full potential of your digital presence. Let’s embark on a journey of innovation and
-        success together. Contact us today to discuss your Web and Mobile Software Development needs.</p>
-    </div>
-    <div class="w-1/2 max-md:w-full flex flex-col">
-      <div class="w-full ">
-        <p class="text-[1.7rem] mt-5  font-bold blur-[.4px]">Experienced Team</p>
-        <p class="text-[1rem] mt-2  text-gray-600  font-medium">Our team comprises seasoned developers, designers, and
-          Web and Mobile Software Development Services project managers with a proven track record of delivering
-          successful project</p>
-      </div>
-      <div class="w-full">
-        <p class="text-[1.7rem] mt-5  font-bold blur-[.4px]">Experienced Team</p>
-        <p class="text-[1rem] mt-2  text-gray-600  font-medium">Our team comprises seasoned developers, designers, and
-          Web and Mobile Software Development Services project managers with a proven track record of delivering
-          successful project</p>
-      </div>
-      <div class="w-full">
-        <p class="text-[1.7rem] mt-5  font-bold blur-[.4px]">Experienced Team</p>
-        <p class="text-[1rem] mt-2  text-gray-600  font-medium">Our team comprises seasoned developers, designers, and
-          Web and Mobile Software Development Services project managers with a proven track record of delivering
-          successful project</p>
-      </div>
-      <div class="w-full">
-        <p class="text-[1.7rem]  mt-5 font-bold blur-[.4px]">Experienced Team</p>
-        <p class="text-[1rem] mt-2 text-gray-600  font-medium">Our team comprises seasoned developers, designers, and
-          Web and Mobile Software Development Services project managers with a proven track record of delivering
-          successful project</p>
-      </div>
-      <div class="w-full">
-        <p class="text-[1.7rem] mt-5  font-bold blur-[.4px]">Experienced Team</p>
-        <p class="text-[1rem] mt-2  text-gray-600  font-medium">Our team comprises seasoned developers, designers, and
-          Web and Mobile Software Development Services project managers with a proven track record of delivering
-          successful project</p>
-      </div>
-
-    </div>
-
-  </div>
-  <!-- footer section -->
-  <footer class="bg-white text-gray-700">
-    <div class="w-full px-24 max-sm:px-10 max-md:px-16 max-sm:grid-cols-1 max-md:grid-cols-2 grid grid-cols-4 gap-5">
-      <div class="flex flex-col text-left items-start justify-start">
-        <div class="logo h-24">
-          <img src="images/logo_dark.png" class="h-24" alt="logo" />
-        </div>
-        <p class="text-[1.1rem] text-black w-[70%]">
-          Optimum Tech stands at the forefront of IT innovation, specializing
-          in both top-tier IT services and pioneering B2B tech products.
+      <div class="w-1/2 max-md:w-full">
+        <h1
+          class="text-[3rem] max-md:text-[2rem] font-extrabold blur-[.4px] leading-tight"
+        >
+          UI/UX Design
+        </h1>
+        <p
+          class="text-[1.1rem] blur-[.4px] text-gray-700 font-medium mt-5 space-y-1"
+        >
+          Unleash the potential of your digital products through intuitive and
+          visually stunning User Experience (UX) and User Interface (UI) design.
+          Our design experts combine creativity with user-centric principles,
+          ensuring that your applications and websites not only look captivating
+          but also provide a seamless and enjoyable interaction for your
+          users.If you're looking for information or assistance related to UI/UX
+          design services offered by Optimum Tech, it's recommended to visit
+          their official website or contact them directly for the most accurate
+          and up-to-date information.
         </p>
-        <p class="text-[1.5rem] text-black mt-5">
-          Social Links <span class="w-[80%] h-[1rem] bg-[#893810]"></span>
-        </p>
-        <div class="flex space-x-3 mt-2">
-          <a href="#" class="text-blue-600 text-xl"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="text-blue-700 text-xl"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="text-gray-900 text-xl"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-red-600 text-xl"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="text-red-500 text-xl"><i class="fas fa-envelope"></i></a>
+        <div class="w-full flex justify-start mt-12 items-start gap-5">
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="/images/android-svgrepo-com.svg"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="/images/apple-svgrepo-com-2.svg"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="/images/flutter-svgrepo-com.svg"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <svg
+              class="w-full h-full object-cover"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              width="83px"
+              height="83px"
+              viewBox="0 -1.5 27 27"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="m15.902 11.974c0 1.331-1.079 2.41-2.41 2.41s-2.41-1.079-2.41-2.41 1.079-2.41 2.41-2.41 2.41 1.079 2.41 2.41z"
+                ></path>
+                <path
+                  d="m13.491 17.494c-.201.005-.438.008-.676.008-2.811 0-5.522-.425-8.073-1.214l.193.051c-1.351-.436-2.522-1.079-3.541-1.903l.021.016c-.789-.571-1.32-1.455-1.41-2.467l-.001-.013c0-1.594 1.747-3.154 4.681-4.172 2.512-.827 5.403-1.304 8.405-1.304.139 0 .278.001.417.003h-.021c.116-.002.252-.003.389-.003 2.965 0 5.82.469 8.496 1.337l-.195-.055c1.305.424 2.438 1.036 3.433 1.814l-.024-.018c.775.546 1.298 1.404 1.386 2.387l.001.013c0 1.656-1.954 3.332-5.103 4.374-2.363.729-5.08 1.149-7.895 1.149-.17 0-.339-.002-.508-.005h.025zm0-9.84c-.106-.002-.232-.002-.358-.002-2.881 0-5.656.452-8.259 1.289l.191-.053c-2.698.941-3.908 2.228-3.908 3.087 0 .893 1.301 2.3 4.153 3.274 2.249.697 4.834 1.099 7.513 1.099.235 0 .469-.003.702-.009l-.034.001c.146.003.318.005.49.005 2.684 0 5.274-.4 7.715-1.143l-.187.049c2.96-.984 4.32-2.391 4.32-3.28-.102-.638-.462-1.176-.966-1.515l-.008-.005c-.866-.674-1.876-1.217-2.97-1.574l-.07-.02c-2.368-.766-5.093-1.208-7.92-1.208-.142 0-.283.001-.424.003h.021z"
+                ></path>
+                <path
+                  d="m8.023 23.986c-.016 0-.035.001-.053.001-.453 0-.878-.119-1.245-.327l.013.007c-1.378-.8-1.858-3.092-1.28-6.141.697-3.128 1.827-5.894 3.344-8.4l-.069.124c1.499-2.655 3.31-4.926 5.425-6.872l.02-.018c.923-.844 2.003-1.537 3.187-2.028l.073-.027c.407-.196.885-.31 1.39-.31.501 0 .976.113 1.4.314l-.02-.008c1.435.826 1.911 3.36 1.238 6.606-.72 2.967-1.818 5.58-3.262 7.959l.07-.123c-1.452 2.63-3.209 4.882-5.266 6.819l-.014.013c-.958.877-2.083 1.59-3.321 2.082l-.074.026c-.46.181-.992.292-1.549.305h-.006zm1.205-14.447.499.288c-1.381 2.28-2.465 4.926-3.106 7.74l-.034.18c-.533 2.809-.019 4.498.72 4.926.191.102.417.161.657.161.02 0 .041 0 .061-.001h-.003c.955 0 2.458-.605 4.196-2.122 1.976-1.867 3.654-4.023 4.972-6.404l.068-.135c1.318-2.156 2.371-4.653 3.025-7.307l.038-.182c.629-3.058.086-4.93-.686-5.378-.238-.094-.514-.148-.802-.148-.364 0-.708.087-1.012.24l.013-.006c-1.118.465-2.078 1.086-2.907 1.846l.007-.006c-2.041 1.881-3.772 4.057-5.136 6.468l-.069.132z"
+                ></path>
+                <path
+                  d="m18.96 24c-1.306 0-2.96-.787-4.69-2.276-2.175-1.983-4.017-4.282-5.464-6.834l-.072-.137c-1.43-2.349-2.551-5.075-3.215-7.975l-.036-.185c-.162-.709-.255-1.522-.255-2.357 0-.527.037-1.044.108-1.551l-.007.058c.085-.998.608-1.858 1.372-2.399l.01-.007c1.43-.83 3.865.024 6.342 2.228 2.022 1.914 3.748 4.113 5.118 6.54l.072.138c1.428 2.297 2.557 4.961 3.242 7.798l.038.186c.163.709.257 1.524.257 2.36 0 .577-.044 1.143-.13 1.696l.008-.062c-.103 1.022-.644 1.901-1.429 2.456l-.011.007c-.348.199-.764.316-1.207.316-.018 0-.036 0-.054-.001h.003zm-9.228-9.823c1.458 2.571 3.217 4.771 5.271 6.656l.02.018c2.166 1.863 3.884 2.266 4.628 1.834.773-.446 1.339-2.276.754-5.233-.702-2.89-1.787-5.434-3.219-7.741l.065.112c-1.379-2.456-3.027-4.562-4.948-6.384l-.012-.011c-2.334-2.074-4.225-2.54-4.998-2.094-.473.385-.784.952-.825 1.593v.007c-.055.39-.086.84-.086 1.298 0 .757.086 1.493.248 2.201l-.013-.066c.673 2.952 1.747 5.559 3.182 7.924l-.066-.117z"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </div>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4">
-          Site Map
-        </h3>
-        <ul class="space-y-2 text-left">
-          <li><a href="#" class="hover:text-teal-500">About</a></li>
-          <li><a href="#" class="hover:text-teal-500">Focus</a></li>
-          <li><a href="#" class="hover:text-teal-500">Industries</a></li>
-          <li><a href="#" class="hover:text-teal-500">Services</a></li>
-          <li><a href="#" class="hover:text-teal-500">Methodology</a></li>
-          <li><a href="#" class="hover:text-teal-500">Work</a></li>
-          <li><a href="#" class="hover:text-teal-500">Blogs</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div>
-        <h3 class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4">
-          Services
-        </h3>
-        <ul class="space-y-2">
-          <li class="flex items-center gap-2">
-            <span class="text-xl">🤖</span> AI/ML
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-xl">📱</span> Mobile Applications
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-xl">💻</span> Software Development
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-xl">🌐</span> Web Development
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-xl">📈</span> Digital Marketing & SEO
-          </li>
-        </ul>
-      </div>
-
-      <!-- Gallery -->
-      <div>
-        <h3 class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4">
-          Gallery
-        </h3>
-        <div class="grid grid-cols-3 gap-2">
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 1" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 2" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 3" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 4" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 5" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 6" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 7" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 8" />
-          <img src="https://via.placeholder.com/80" class="rounded-lg" alt="Person 9" />
+        <div class="bg-white p-6 flex justify-start items-start flex-col">
+          <div
+            class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 pl-0 text-gray-800 text-lg"
+          >
+            <ul class="space-y-3">
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Native iOS App Development
+              </li>
+              <li
+                class="text-[.9rem] blur-[.3px] font-medium"
+                class="flex items-center"
+              >
+                • Cross-platform App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Wearable App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Xamarin App Development
+              </li>
+            </ul>
+            <ul class="space-y-3">
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Native Android App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Hybrid App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • React Native App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Flutter App Development
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 text-center">
+            <button
+              class="bg-red-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-red-600"
+            >
+              Mobile App Developers
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Bottom Section -->
-    <div class="border-t mt-8 p-4 border-black text-center text-[1rem]">
-      <p>© 2025 . All rights reserved.</p>
-      <p class="text-gray-500">
-        Automated page speed optimizations for fast site performance
+
+    <div
+      class="w-full min-h-screen max-md:flex-col max-md:px-6 max-md:py-4 px-10 py-6 flex gap-4 justify-between items-start"
+    >
+      <div class="w-1/2 max-md:w-full">
+        <h1
+          class="text-[3rem] max-md:text-[2rem] font-extrabold blur-[.4px] leading-tight"
+        >
+          Mobile Hybrid App Development with Flutter
+        </h1>
+        <p
+          class="text-[1.1rem] blur-[.4px] text-gray-700 font-medium mt-5 space-y-1"
+        >
+          Leverage the power of cross-platform mobile development with Flutter.
+          Our skilled team of developers crafts seamless and high-performance
+          hybrid apps that run flawlessly on both iOS and Android platforms.
+          With Flutter's expressive UI, we bring your ideas to life, delivering
+          an engaging user experience. Flutter is a popular framework for
+          developing cross-platform mobile applications, allowing you to use a
+          single codebase to create apps for both Android and iOS. It offers a
+          rich set of pre-designed widgets, a fast development process, and a
+          hot reload feature that makes it easier to experiment, build UIs, add
+          features, and fix bugs
+        </p>
+        <div class="w-full flex justify-start mt-12 items-start gap-5">
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="/images/android-svgrepo-com.svg"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="/images/apple-svgrepo-com-2.svg"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <img
+              class="w-full h-full object-cover"
+              src="/images/flutter-svgrepo-com.svg"
+            />
+          </div>
+          <div class="w-[4rem] aspect-auto border border-e-gray-600 rounded-md">
+            <svg
+              class="w-full h-full object-cover"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              width="83px"
+              height="83px"
+              viewBox="0 -1.5 27 27"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="m15.902 11.974c0 1.331-1.079 2.41-2.41 2.41s-2.41-1.079-2.41-2.41 1.079-2.41 2.41-2.41 2.41 1.079 2.41 2.41z"
+                ></path>
+                <path
+                  d="m13.491 17.494c-.201.005-.438.008-.676.008-2.811 0-5.522-.425-8.073-1.214l.193.051c-1.351-.436-2.522-1.079-3.541-1.903l.021.016c-.789-.571-1.32-1.455-1.41-2.467l-.001-.013c0-1.594 1.747-3.154 4.681-4.172 2.512-.827 5.403-1.304 8.405-1.304.139 0 .278.001.417.003h-.021c.116-.002.252-.003.389-.003 2.965 0 5.82.469 8.496 1.337l-.195-.055c1.305.424 2.438 1.036 3.433 1.814l-.024-.018c.775.546 1.298 1.404 1.386 2.387l.001.013c0 1.656-1.954 3.332-5.103 4.374-2.363.729-5.08 1.149-7.895 1.149-.17 0-.339-.002-.508-.005h.025zm0-9.84c-.106-.002-.232-.002-.358-.002-2.881 0-5.656.452-8.259 1.289l.191-.053c-2.698.941-3.908 2.228-3.908 3.087 0 .893 1.301 2.3 4.153 3.274 2.249.697 4.834 1.099 7.513 1.099.235 0 .469-.003.702-.009l-.034.001c.146.003.318.005.49.005 2.684 0 5.274-.4 7.715-1.143l-.187.049c2.96-.984 4.32-2.391 4.32-3.28-.102-.638-.462-1.176-.966-1.515l-.008-.005c-.866-.674-1.876-1.217-2.97-1.574l-.07-.02c-2.368-.766-5.093-1.208-7.92-1.208-.142 0-.283.001-.424.003h.021z"
+                ></path>
+                <path
+                  d="m8.023 23.986c-.016 0-.035.001-.053.001-.453 0-.878-.119-1.245-.327l.013.007c-1.378-.8-1.858-3.092-1.28-6.141.697-3.128 1.827-5.894 3.344-8.4l-.069.124c1.499-2.655 3.31-4.926 5.425-6.872l.02-.018c.923-.844 2.003-1.537 3.187-2.028l.073-.027c.407-.196.885-.31 1.39-.31.501 0 .976.113 1.4.314l-.02-.008c1.435.826 1.911 3.36 1.238 6.606-.72 2.967-1.818 5.58-3.262 7.959l.07-.123c-1.452 2.63-3.209 4.882-5.266 6.819l-.014.013c-.958.877-2.083 1.59-3.321 2.082l-.074.026c-.46.181-.992.292-1.549.305h-.006zm1.205-14.447.499.288c-1.381 2.28-2.465 4.926-3.106 7.74l-.034.18c-.533 2.809-.019 4.498.72 4.926.191.102.417.161.657.161.02 0 .041 0 .061-.001h-.003c.955 0 2.458-.605 4.196-2.122 1.976-1.867 3.654-4.023 4.972-6.404l.068-.135c1.318-2.156 2.371-4.653 3.025-7.307l.038-.182c.629-3.058.086-4.93-.686-5.378-.238-.094-.514-.148-.802-.148-.364 0-.708.087-1.012.24l.013-.006c-1.118.465-2.078 1.086-2.907 1.846l.007-.006c-2.041 1.881-3.772 4.057-5.136 6.468l-.069.132z"
+                ></path>
+                <path
+                  d="m18.96 24c-1.306 0-2.96-.787-4.69-2.276-2.175-1.983-4.017-4.282-5.464-6.834l-.072-.137c-1.43-2.349-2.551-5.075-3.215-7.975l-.036-.185c-.162-.709-.255-1.522-.255-2.357 0-.527.037-1.044.108-1.551l-.007.058c.085-.998.608-1.858 1.372-2.399l.01-.007c1.43-.83 3.865.024 6.342 2.228 2.022 1.914 3.748 4.113 5.118 6.54l.072.138c1.428 2.297 2.557 4.961 3.242 7.798l.038.186c.163.709.257 1.524.257 2.36 0 .577-.044 1.143-.13 1.696l.008-.062c-.103 1.022-.644 1.901-1.429 2.456l-.011.007c-.348.199-.764.316-1.207.316-.018 0-.036 0-.054-.001h.003zm-9.228-9.823c1.458 2.571 3.217 4.771 5.271 6.656l.02.018c2.166 1.863 3.884 2.266 4.628 1.834.773-.446 1.339-2.276.754-5.233-.702-2.89-1.787-5.434-3.219-7.741l.065.112c-1.379-2.456-3.027-4.562-4.948-6.384l-.012-.011c-2.334-2.074-4.225-2.54-4.998-2.094-.473.385-.784.952-.825 1.593v.007c-.055.39-.086.84-.086 1.298 0 .757.086 1.493.248 2.201l-.013-.066c.673 2.952 1.747 5.559 3.182 7.924l-.066-.117z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="bg-white p-6 flex justify-start items-start flex-col">
+          <div
+            class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 pl-0 text-gray-800 text-lg"
+          >
+            <ul class="space-y-3">
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Native iOS App Development
+              </li>
+              <li
+                class="text-[.9rem] blur-[.3px] font-medium"
+                class="flex items-center"
+              >
+                • Cross-platform App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Wearable App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Xamarin App Development
+              </li>
+            </ul>
+            <ul class="space-y-3">
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Native Android App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Hybrid App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • React Native App Development
+              </li>
+              <li class="text-[.9rem] blur-[.3px] font-medium">
+                • Flutter App Development
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 text-center">
+            <button
+              class="bg-red-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-red-600"
+            >
+              Mobile App Developers
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 max-md:w-full">
+        <img
+          src="images/img-services-iot-solution.png"
+          alt="sevices mobile app development"
+        />
+      </div>
+    </div>
+
+    <!-- next section part -->
+    <div
+      class="w-full min-h-screen flex flex-col items-center max-md:px-4 px-10"
+    >
+      <p class="text-[2.7rem] font-medium blur-[.4px]">Our Experties</p>
+      <h1 class="text-[2.6rem] leading-tight text-center font-bold blur-[.4px]">
+        Web and Mobile Software Development Services
+      </h1>
+      <p class="text-[1rem] text-center w-[87%]">
+        We are a dedicated team of tech enthusiasts committed to transforming
+        your ideas into cutting-edge digital solutions. Our comprehensive range
+        of Web and Mobile Software Development Services ensures that your
+        business stays ahead in the dynamic world of technology.
       </p>
-    </div>
-  </footer>
-  <script src="services.js"></script>
-  
-</body>
 
+      <div
+        class="w-full min-h-screen grid grid-cols-2 text-center pl-10 gap-4 my-5 max-md:grid-cols-1 max-md:grid-rows-4"
+      >
+        <div
+          class="border text-left border-gray-300 p-6 hover:bg-[#F4F0FF] transition-all duration-500 rounded-md bg-white shadow-sm max-w-lg"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
+          <ul class="text-gray-700 space-y-2">
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Full-Stack Development:</strong> From frontend to
+                backend, we create seamless and responsive web applications
+                tailored to your business needs.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>E-commerce Solutions:</strong> Boost your online
+                presence with secure and scalable e-commerce platforms that
+                enhance user experience and drive conversions.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Custom Web Portals:</strong> Streamline your business
+                processes with personalized web portals that improve
+                collaboration and efficiency.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="border text-left border-gray-300 p-6 hover:bg-[#F4F0FF] transition-all duration-500 rounded-md bg-white shadow-sm max-w-lg"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
+          <ul class="text-gray-700 space-y-2 text-base">
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Full-Stack Development:</strong> From frontend to
+                backend, we create seamless and responsive web applications
+                tailored to your business needs.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>E-commerce Solutions:</strong> Boost your online
+                presence with secure and scalable e-commerce platforms that
+                enhance user experience and drive conversions.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Custom Web Portals:</strong> Streamline your business
+                processes with personalized web portals that improve
+                collaboration and efficiency.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="border text-left border-gray-300 p-6 hover:bg-[#F4F0FF] transition-all duration-500 rounded-md bg-white shadow-sm max-w-lg"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
+          <ul class="text-gray-700 space-y-2 text-base">
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Full-Stack Development:</strong> From frontend to
+                backend, we create seamless and responsive web applications
+                tailored to your business needs.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>E-commerce Solutions:</strong> Boost your online
+                presence with secure and scalable e-commerce platforms that
+                enhance user experience and drive conversions.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Custom Web Portals:</strong> Streamline your business
+                processes with personalized web portals that improve
+                collaboration and efficiency.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="border text-left border-gray-300 p-6 hover:bg-[#F4F0FF] transition-all duration-500 rounded-lg bg-white shadow-sm max-w-lg"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Web Development</h2>
+          <ul class="text-gray-700 space-y-2 text-base">
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Full-Stack Development:</strong> From frontend to
+                backend, we create seamless and responsive web applications
+                tailored to your business needs.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>E-commerce Solutions:</strong> Boost your online
+                presence with secure and scalable e-commerce platforms that
+                enhance user experience and drive conversions.
+              </p>
+            </li>
+            <li class="flex">
+              <span class="text-lg mr-2">◦</span>
+              <p>
+                <strong>Custom Web Portals:</strong> Streamline your business
+                processes with personalized web portals that improve
+                collaboration and efficiency.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full min-h-screen relative max-md:flex-col mb-5 max-md:px-10 px-20 py-5 flex justify-start items-start mt-5 gap-5"
+    >
+      <div class="w-1/2 sticky max-md:relative max-md:w-full top-0">
+        <h3
+          class="text-[3rem] max-md:text-[2.3rem] max-md:leading-[2.3rem] leading-[3.2rem] blur-[.5px] font-extrabold text-[#077B93]"
+        >
+          Why Choose Optimum Tech Web and Mobile Software Development Services?
+        </h3>
+        <p class="text-[1rem] mt-5 text-gray-600 w-[92%] font-medium">
+          Optimum Tech Web and Mobile Software Development Services to unlock
+          the full potential of your digital presence. Let’s embark on a journey
+          of innovation and success together. Contact us today to discuss your
+          Web and Mobile Software Development needs.
+        </p>
+      </div>
+      <div class="w-1/2 max-md:w-full flex flex-col">
+        <div class="w-full">
+          <p class="text-[1.7rem] mt-5 font-bold blur-[.4px]">
+            Experienced Team
+          </p>
+          <p class="text-[1rem] mt-2 text-gray-600 font-medium">
+            Our team comprises seasoned developers, designers, and Web and
+            Mobile Software Development Services project managers with a proven
+            track record of delivering successful project
+          </p>
+        </div>
+        <div class="w-full">
+          <p class="text-[1.7rem] mt-5 font-bold blur-[.4px]">
+            Experienced Team
+          </p>
+          <p class="text-[1rem] mt-2 text-gray-600 font-medium">
+            Our team comprises seasoned developers, designers, and Web and
+            Mobile Software Development Services project managers with a proven
+            track record of delivering successful project
+          </p>
+        </div>
+        <div class="w-full">
+          <p class="text-[1.7rem] mt-5 font-bold blur-[.4px]">
+            Experienced Team
+          </p>
+          <p class="text-[1rem] mt-2 text-gray-600 font-medium">
+            Our team comprises seasoned developers, designers, and Web and
+            Mobile Software Development Services project managers with a proven
+            track record of delivering successful project
+          </p>
+        </div>
+        <div class="w-full">
+          <p class="text-[1.7rem] mt-5 font-bold blur-[.4px]">
+            Experienced Team
+          </p>
+          <p class="text-[1rem] mt-2 text-gray-600 font-medium">
+            Our team comprises seasoned developers, designers, and Web and
+            Mobile Software Development Services project managers with a proven
+            track record of delivering successful project
+          </p>
+        </div>
+        <div class="w-full">
+          <p class="text-[1.7rem] mt-5 font-bold blur-[.4px]">
+            Experienced Team
+          </p>
+          <p class="text-[1rem] mt-2 text-gray-600 font-medium">
+            Our team comprises seasoned developers, designers, and Web and
+            Mobile Software Development Services project managers with a proven
+            track record of delivering successful project
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class="bg-white text-gray-700">
+      <div
+        class="w-full px-24 max-sm:px-10 max-md:px-16 max-sm:grid-cols-1 max-md:grid-cols-2 grid grid-cols-4 gap-5"
+      >
+        <div class="flex flex-col text-left items-start justify-start">
+          <div class="logo h-24">
+            <img src="images/logo_dark.png" class="h-24" alt="logo" />
+          </div>
+          <p class="text-[1.1rem] text-black w-[70%]">
+            Optimum Tech stands at the forefront of IT innovation, specializing
+            in both top-tier IT services and pioneering B2B tech products.
+          </p>
+          <p class="text-[1.5rem] text-black mt-5">
+            Social Links <span class="w-[80%] h-[1rem] bg-[#893810]"></span>
+          </p>
+          <div class="flex space-x-3 mt-2">
+            <a href="#" class="text-blue-600 text-xl"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-blue-700 text-xl"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-gray-900 text-xl"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-red-600 text-xl"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-red-500 text-xl"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4"
+          >
+            Site Map
+          </h3>
+          <ul class="space-y-2 text-left">
+            <li><a href="#" class="hover:text-teal-500">About</a></li>
+            <li><a href="#" class="hover:text-teal-500">Focus</a></li>
+            <li><a href="#" class="hover:text-teal-500">Industries</a></li>
+            <li><a href="#" class="hover:text-teal-500">Services</a></li>
+            <li><a href="#" class="hover:text-teal-500">Methodology</a></li>
+            <li><a href="#" class="hover:text-teal-500">Work</a></li>
+            <li><a href="#" class="hover:text-teal-500">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3
+            class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4"
+          >
+            Services
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <span class="text-xl">🤖</span> AI/ML
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">📱</span> Mobile Applications
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">💻</span> Software Development
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">🌐</span> Web Development
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-xl">📈</span> Digital Marketing & SEO
+            </li>
+          </ul>
+        </div>
+
+        <!-- Gallery -->
+        <div>
+          <h3
+            class="text-lg font-semibold border-b-2 border-teal-500 inline-block mb-4"
+          >
+            Gallery
+          </h3>
+          <div class="grid grid-cols-3 gap-2">
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 1"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 2"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 3"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 4"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 5"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 6"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 7"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 8"
+            />
+            <img
+              src="https://via.placeholder.com/80"
+              class="rounded-lg"
+              alt="Person 9"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Section -->
+      <div class="border-t mt-8 p-4 border-black text-center text-[1rem]">
+        <p>© 2025 . All rights reserved.</p>
+        <p class="text-gray-500">
+          Automated page speed optimizations for fast site performance
+        </p>
+      </div>
+    </footer>
+    <script src="services.js"></script>
+  </body>
 </html>
